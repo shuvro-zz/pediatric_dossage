@@ -8,9 +8,30 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="clouds">
+    <img src="assets/cloud-computing-cloud-svgrepo-com.svg" alt="">
+    <img src="assets/cloud-computing-cloud-svgrepo-com.svg" alt="">
+    <img src="assets/cloud-computing-cloud-svgrepo-com.svg" alt="">
+    <img src="assets/cloud-computing-cloud-svgrepo-com.svg" alt="">
+    <img src="assets/cloud-computing-cloud-svgrepo-com.svg" alt="">
+    <img src="assets/cloud-computing-cloud-svgrepo-com.svg" alt="">
+    <img src="assets/cloud-computing-cloud-svgrepo-com.svg" alt="">
+    <img src="assets/cloud-computing-cloud-svgrepo-com.svg" alt="">
+  </div>
   <div id="alert">
     <button id="alert_close">X</button>
     <p id="alert_message"></p>
+  </div>
+  <div id="dosis_ayuda">
+    <button id="ayuda_close">X</button>
+    <p><span> Amoxicilina:</span> 50mg / Kg<br>
+    <span>Amoxicilina + Ac. Clavulanico:</span> 20 - 40mg / Kg<br>
+    <span>Eritromicina:</span> 30 - 120mg / Kg<br>
+    <span>Axitromicina:</span> 10mg / Kg <br>
+    <span>Claritromicina:</span> 15mg / Kg <br>
+    <span>Clindamicina:</span> 20mg / Kg <br>
+    <span>Cefacroxilo:</span> 30mg / Kg
+    </p>
   </div>
   <div id="wrapper">
     <h1>Calculadora de<br>dosis pediátricas</h1>
@@ -18,7 +39,11 @@
       <label for="peso">Peso del niño (Kg)</label>
       <input type="number" name="peso" id="peso" value="" placeholder="0" min="1" max="99">
       
-      <label for="dosis">Dosis por kilo (mg)</label>
+      <label for="dosis">Dosis por kilo (mg)
+        <button id="dosis_question">?</button>
+         
+      </label>
+      
       <input type="number" name="Ml" id="dosis" value="" placeholder="0" min="1" max="99">
       
       <label for="dosisXDia">Dosis al día</label>
@@ -34,7 +59,6 @@
     <input type="button" value="Calcular dosis" id="calcular">
     <p>Creado por <a href="https://alexisss1928.github.io/">Alexis Salcedo</a></p>
   </div>
-  
   <script src="index.js"></script>
 </body>
 </html>

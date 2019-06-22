@@ -29,3 +29,14 @@ if (peso === "" || dosis === "" || dosisDia === "" || mL === "" || mG === ""){
 document.querySelector("#alert_close").addEventListener("click", function(){
   document.querySelector("#alert").classList.remove("unhide");
 })
+
+
+//Ayuda de dosis
+document.querySelector("#dosis_question").addEventListener("click", function(){
+  event.preventDefault();
+  document.querySelector("#dosis_ayuda").classList.add("unhide");
+})
+//Cerrar ayuda
+document.querySelector("#ayuda_close").addEventListener("click", function(){
+  document.querySelector("#dosis_ayuda").classList.remove("unhide");
+})

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dosis pediatricas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="alert">
+    <button id="alert_close">X</button>
+    <p id="alert_message"></p>
+  </div>
+  <div id="wrapper">
+    <h1>Calculadora de<br>dosis pediátricas</h1>
+    <form id="dosis_form">
+      <label for="peso">Peso del niño (Kg)</label>
+      <input type="number" name="peso" id="peso" value="" placeholder="0" min="1" max="99">
+      
+      <label for="dosis">Dosis por kilo (mg)</label>
+      <input type="number" name="Ml" id="dosis" value="" placeholder="0" min="1" max="99">
+      
+      <label for="dosisXDia">Dosis al día</label>
+      <input type="number" name="Dosis al dia" id="dosisXDia" value="" placeholder="0" min="1" max="99">
+      
+      <label for="ml_del_medicamento">Ml del Medicamento</label>
+      <input type="number" name="Ml" id="ml_del_medicamento" value="" placeholder="0" min="1" max="99">
+      
+      <label for="mg_del_medicamento">Mg del Medicamento</label>
+      <input type="number" name="Mg" id="mg_del_medicamento" value="" placeholder="0" min="1" max="999">
+      
+    </form>
+    <input type="button" value="Calcular dosis" id="calcular">
+    <p>Creado por <a href="https://alexisss1928.github.io/">Alexis Salcedo</a></p>
+  </div>
+  
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Chango|Josefin+Sans:700&display=swap');
 
 body{
-  background-image: -webkit-linear-gradient( 315deg , #f6f6f6, #bdf2d5);
-  background-image: -o-linear-gradient( 315deg , #f6f6f6, #bdf2d5);
-  background-image: linear-gradient( 135deg , #f6f6f6, #bdf2d5);
+  background-image: -webkit-linear-gradient( 315deg , #ff487e, #ff9776, #ffd5be, #ffedff);
+  background-image: -o-linear-gradient( 315deg , #ff487e, #ff9776, #ffd5be, #ffedff);
+  background-image: linear-gradient( 135deg , #35477d, rgb(106, 131, 214));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,10 +21,15 @@ body{
   overflow: hidden
 }
 
-h1{
-  font-size: 1.4em;
-  color: #444;
+h1, h2{
+  font-size: 1.6em;
+  color: #e16262;
   font-family: 'Chango', cursive, sans-serif;
+  text-shadow: 1px 1px #444,
+  2px 2px #444,
+  3px 3px #444,
+  4px 4px #444,
+  -1px -1px #444
 }
 
 #wrapper{
@@ -84,25 +89,26 @@ input[type='number'] {
   padding:10px;
   border-radius: 5px;
   width: 150px;
-  background: #444;
+  background: #3a9679;
   color: #f6f6f6;
   border:none;
 }
 
-#dosis_question{
+.dosis_question{
   padding:0;
   width: 24px;
   height: 24px;
-  border: solid 3px #ca3e47;
   margin-left: 10px;
+  border: solid 3px #ca3e47;
   border-radius: 50%;
   font-weight: 700;
   color: #444;
 }
 
-#alert , #dosis_ayuda{
+#alert, #dosis_ayuda, #diaria_ayuda{
   display:none;
   position:absolute;
+  padding: 20px;
   top:50%;
   left:50%;
   -webkit-transform: translate(-50%, -50%);
@@ -111,118 +117,75 @@ input[type='number'] {
   background: #7ad9f5;
   color: #444;
   border-radius: 5px;
-  width:80%;
+  max-height: 70vh;
+  overflow-y: auto;
+  overflow-x: hidden
+}
+
+#alert::-webkit-scrollbar,
+#dosis_ayuda::-webkit-scrollbar,
+#diaria_ayuda::-webkit-scrollbar {
+	width: 5px;
+	background-color: #7ad9f5;
+}
+
+#alert::-webkit-scrollbar-thumb,
+#diaria_ayuda::-webkit-scrollbar-thumb,
+#dosis_ayuda::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #ca3e47;
+}
+
+#alert::-webkit-scrollbar-track,
+#diaria_ayuda::-webkit-scrollbar-track,
+#dosis_ayuda::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #7ad9f5;
 }
 
 .unhide{
-  display:block !important;
+  display: inline-block  !important;
 }
 
-#alert_close , #ayuda_close{
-  font-size: 20px;
-  position:absolute;
+#alert_close , #ayuda_close, #diaria_close{
+  width: 30px;
+  height: 30px;
+  border: solid 3px #ca3e47;
+  background: #f6f6f6;
+  border-radius: 50%;
+  font-weight: 700;
+  position:sticky;
   color: #444;
-  top: -20px;
-  right: -20px;
-  background: none;
-  border: none;
+  top: 0px;
+  right: 0px;
+  float: right;
+  transform: translate(40%, -40%);
 }
 
-#alert_message , #dosis_ayuda > p{
+#alert_message , #dosis_ayuda div, #diaria_ayuda div{
   text-align: center;
-  margin:16px;
+  line-height: 1.6em;
+  margin:0px;
   padding:10px;
   border: dashed 2px #444;
+  box-sizing: border-box;
 }
 
-#dosis_ayuda span{
+#dosis_ayuda span, #diaria_ayuda span{
   color: #ca3e47;
 }
 
 a{
   text-decoration: none;
-  color: #009975;
+  color: #ca3e47;
 }
-
-/*#clouds img{
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  left: 0;
-  top: 10%;
-  z-index: -1;
-  -webkit-animation: move linear infinite;
-          animation: move linear infinite;
-}
-
-#clouds img:nth-child(1){
-  top: 10%;
-  -webkit-animation-duration: 70s;
-          animation-duration: 70s;
-}
-
-#clouds img:nth-child(2){
-  top: 70%;
-  -webkit-animation-duration: 40s;
-          animation-duration: 40s;
-}
-
-#clouds img:nth-child(3){
-  top: 30%;
-  -webkit-animation-duration: 50s;
-          animation-duration: 50s;
-}
-
-#clouds img:nth-child(4){
-  top: 80%;
-  -webkit-animation-duration: 30s;
-          animation-duration: 30s;
-}
-
-#clouds img:nth-child(5){
-  top: 50%;
-  -webkit-animation-duration: 130s;
-          animation-duration: 130s;
-}
-#clouds img:nth-child(6){
-  top: 20%;
-  -webkit-animation-duration: 230s;
-          animation-duration: 230s;
-}
-#clouds img:nth-child(7){
-  top: 40%;
-  -webkit-animation-duration: 70s;
-          animation-duration: 70s;
-}
-#clouds img:nth-child(8){
-  top: 90%;
-  -webkit-animation-duration: 45s;
-          animation-duration: 45s;
-}
-
-@-webkit-keyframes move{
-  from {
-    left: -160px;
-  }
-
-  to{
-    left: 100%;
-  }
-}
-
-@keyframes move{
-  from {
-    left: -160px;
-  }
-
-  to{
-    left: 100%;
-  }
-}*/
 
 @media (max-width: 480px){
   #wrapper{
-    background: hsla(0, 12%, 93%, 0);
     width: 100vw;
     height: 100vh;
     border-radius: 0px;
@@ -240,24 +203,14 @@ a{
         -ms-flex-align: center;
             align-items: center;
     margin:0;
+    background: rgba(190,190,250,1)
+  }
+
+  #alert, #dosis_ayuda, #diaria_ayuda{
+    width: 80vw;
   }
 
   form{
     width: 100%;
   }
-
-  /*#clouds img{
-    width: 90px;
-    height: 90px;
-  }
-
-  #clouds img:nth-child(6){
-    display: none
-  }
-  #clouds img:nth-child(7){
-    display: none
-  }
-  #clouds img:nth-child(8){
-    display: none
-  }*/
-}     
+}

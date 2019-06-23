@@ -13,12 +13,13 @@ document.querySelector("#calcular").addEventListener("click", function(){
 //Verificar si falta algun dato o resolver la dosis
 if (peso === "" || dosis === "" || dosisDia === "" || mL === "" || mG === ""){
   document.querySelector("#alert").classList.add("unhide");
-  document.querySelector("#alert_message").textContent = "Parece que te falta algun dato, por favor verificalos";
+  document.querySelector("#alert_message").textContent = "Parece que te falta algún dato, por favor verificalos";
 } else {
+
   //Agregar clase para alerta con el resultado
   document.querySelector("#alert").classList.add("unhide");
 
-  //Mensaje con el resultado
+  //Mensaje de alerta con el resultado
   document.querySelector("#alert_message").textContent = "La dosis del medicamento es de " + dosisFinal.toFixed(2) + " ml cada " + 24/dosisDia + " horas.";
 
 //Resetear valores de los input luego de calcular
@@ -31,12 +32,24 @@ document.querySelector("#alert_close").addEventListener("click", function(){
 })
 
 
-//Ayuda de dosis
+//Abrir ayuda de dosis
 document.querySelector("#dosis_question").addEventListener("click", function(){
   event.preventDefault();
   document.querySelector("#dosis_ayuda").classList.add("unhide");
 })
-//Cerrar ayuda
+
+//Cerrar ayuda de dosis
 document.querySelector("#ayuda_close").addEventListener("click", function(){
   document.querySelector("#dosis_ayuda").classList.remove("unhide");
+})
+
+//Abrir ayuda de dosis diarias
+document.querySelector("#dosisDiarias").addEventListener("click", function(){
+  event.preventDefault();
+  document.querySelector("#diaria_ayuda").classList.add("unhide");
+})
+
+//Cerrar ayuda de dosis diarias
+document.querySelector("#diaria_close").addEventListener("click", function(){
+  document.querySelector("#diaria_ayuda").classList.remove("unhide");
 })

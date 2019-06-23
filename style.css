@@ -23,6 +23,7 @@ body{
 
 h1, h2{
   font-size: 1.6em;
+  margin-top: 0;
   color: #e16262;
   font-family: 'Chango', cursive, sans-serif;
   text-shadow: 1px 1px #444,
@@ -203,6 +204,7 @@ a{
         -ms-flex-align: center;
             align-items: center;
     margin:0;
+    padding: 20px;
     background: rgba(190,190,250,1)
   }
 

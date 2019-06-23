@@ -59,10 +59,11 @@ label{
   text-align: left;
   margin:5px 0;
   line-height: 40px;
-  background: hsla(225, 40%, 35%, .2);
+  background: hsla(225, 40%, 35%, .3);
   border-radius: 5px 0 0 5px;
   padding-left: 10px;
   box-sizing: border-box;
+  color: #f6f6f6;
 }
 
 input{
@@ -72,7 +73,7 @@ input{
   font-size: 25px;
   margin:5px 0;
   border:none;
-  color: #444;
+  color: #f6f6f6;
   text-align: center
 }
 
@@ -209,7 +210,7 @@ a{
             align-items: center;
     margin:0;
     padding: 20px;
-    background: rgba(190,190,250,1)
+    background: #fabc60
   }
 
   #alert, #dosis_ayuda, #diaria_ayuda{

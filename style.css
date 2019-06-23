@@ -3,7 +3,7 @@
 body{
   background-image: -webkit-linear-gradient( 315deg , #ff487e, #ff9776, #ffd5be, #ffedff);
   background-image: -o-linear-gradient( 315deg , #ff487e, #ff9776, #ffd5be, #ffedff);
-  background-image: linear-gradient( 135deg , #35477d, rgb(106, 131, 214));
+  background-image: linear-gradient( 135deg , #fabc60, hsl(36, 100%, 83%));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,7 +23,6 @@ body{
 
 h1, h2{
   font-size: 1.6em;
-  margin-top: 0;
   color: #e16262;
   font-family: 'Chango', cursive, sans-serif;
   text-shadow: 1px 1px #444,
@@ -31,6 +30,15 @@ h1, h2{
   3px 3px #444,
   4px 4px #444,
   -1px -1px #444
+}
+
+h1{
+  margin-top: 0;
+}
+
+hr{
+  width: 90%;
+  border: dashed 1px #3a9679;
 }
 
 #wrapper{
@@ -49,6 +57,7 @@ form{
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 300px;
+  margin-top: 12px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -63,7 +72,7 @@ label{
   border-radius: 5px 0 0 5px;
   padding-left: 10px;
   box-sizing: border-box;
-  color: #f6f6f6;
+  color: #444;
 }
 
 input{
@@ -219,5 +228,9 @@ a{
 
   form{
     width: 100%;
+  }
+
+  label{
+    color: #f6f6f6;
   }
 }

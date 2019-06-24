@@ -10,15 +10,6 @@ document.querySelector("#calcular").addEventListener("click", function(){
   const dosisMl = (dosisMaxDiaria * mL) / mG;
   const dosisFinal = dosisMl / dosisDia;
 
-  console.log(peso)
-  console.log(dosis)
-  console.log(dosisDia)
-  console.log(mL)
-  console.log(mG)
-  console.log(dosisMaxDiaria)
-  console.log(dosisMl)
-  console.log(dosisFinal)
-
 //Verificar si falta algun dato o resolver la dosis
 if (peso === "" || dosis === "" || dosisDia === "" || mL === "" || mG === ""){
   document.querySelector("#alert").classList.add("unhide");
@@ -61,6 +52,12 @@ document.querySelector("#dosisDiarias").addEventListener("click", function(){
 //Cerrar ayuda de dosis diarias
 document.querySelector("#diaria_close").addEventListener("click", function(){
   document.querySelector("#diaria_ayuda").classList.remove("unhide");
+})
+
+
+//Limpiar inputs del formulario
+document.querySelector("#limpiar").addEventListener("click", function(){
+  document.getElementById("dosis_form").reset();
 })
 
 const amoxicilina = {

@@ -17,7 +17,6 @@
     font-family: 'Josefin Sans', sans-serif;
     font-size: 100%;
     color: #444;
-    overflow: hidden
   }
 
   h1, h2{
@@ -47,8 +46,10 @@
     border-radius: 10px;
     border: inset 2px #444;
     display: flex;
+    max-width: 500px;
     flex-direction: column;
-    align-items: center
+    align-items: center;
+    overflow-x: hidden;
   }
 
   #custom-select{
@@ -107,7 +108,7 @@
       -moz-appearance:textfield;
   }
 
-  #calcular{
+  .button{
     margin-top: 15px;
     font-size: 14px;
     font-weight: 700;
@@ -117,6 +118,20 @@
     background: #ffd2d2;
     color: #36393B;
     border-top: solid 5px #ffa5a5;
+  }
+  .button:active{
+    background: #ffa5a5
+  }
+
+  #limpiar{
+    width:80px;
+    background: #ca3e47;
+    border-top: solid 5px hsl(356, 55%, 34%);
+    color: #f6f6f6;
+  }
+
+  #limpiar:active{
+    background: hsl(356, 55%, 34%)
   }
 
   #footer{
@@ -142,11 +157,10 @@
   }
 
   #alert, #dosis_ayuda, #diaria_ayuda{
-    display:none;
     position:absolute;
     padding: 20px;
     top:50%;
-    left:50%;
+    left:-100%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -155,7 +169,8 @@
     border-radius: 5px;
     max-height: 70vh;
     overflow-y: auto;
-    overflow-x: hidden
+    overflow-x: hidden;
+    transition: .5s 
   }
 
   #alert::-webkit-scrollbar,
@@ -184,7 +199,7 @@
   }
 
   .unhide{
-    display: inline-block  !important;
+    left: 50% !important;
   }
 
   #alert_close , #ayuda_close, #diaria_close{

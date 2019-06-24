@@ -59,25 +59,23 @@
     <hr>
     <form id="dosis_form">
       <label for="peso">Peso del niño (Kg)</label>
-      <input type="number" name="peso" id="peso" value="" placeholder="0" min="1" max="99">
+      <input type="tel" name="peso" id="peso" value="" placeholder="0" min="1" max="99" maxlength="2">
       
       <label for="dosis">Dosis por kilo (mg)
         <button id="dosis_question" class="dosis_question">?</button>
-         
       </label>
-      
-      <input type="number" name="Ml" id="dosis" value="" placeholder="0" min="1" max="99">
+      <input type="tel" name="Ml" id="dosis" value="" placeholder="0" min="1" max="99" maxlength="2">
       
       <label for="dosisXDia">Dosis al día
         <button class="dosis_question" id="dosisDiarias">?</button>
       </label>
-      <input type="number" name="Dosis al dia" id="dosisXDia" value="" placeholder="0" min="1" max="99">
+      <input type="tel" name="Dosis al dia" id="dosisXDia" value="" placeholder="0" min="1" max="99" maxlength="1">
       
       <label for="ml_del_medicamento">Ml del Medicamento</label>
-      <input type="number" name="Ml" id="ml_del_medicamento" value="" placeholder="0" min="1" max="99">
+      <input type="tel" name="Ml" id="ml_del_medicamento" value="" placeholder="0" min="1" max="99" maxlength="2">
       
       <label for="mg_del_medicamento">Mg del Medicamento</label>
-      <input type="number" name="Mg" id="mg_del_medicamento" value="" placeholder="0" min="1" max="999">
+      <input type="tel" name="Mg" id="mg_del_medicamento" value="" placeholder="0" min="1" max="999" maxlength="3">
       
     </form>
     <input type="button" value="Calcular dosis" id="calcular">

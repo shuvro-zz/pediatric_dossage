@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -7,13 +8,14 @@
   <title>Dosis pediatricas</title>
   <link rel="stylesheet" href="style.css">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-1854753052636064",
-    enable_page_level_ads: true
-  });
-</script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-1854753052636064",
+      enable_page_level_ads: true
+    });
+  </script>
 </head>
+
 <body>
   <div id="alert">
     <button id="alert_close">X</button>
@@ -22,27 +24,27 @@
   <div id="dosis_ayuda">
     <button id="ayuda_close">X</button>
     <div>
-    <h2>Antibioticos</h2>
-    <span> Amoxicilina:</span> 50mg / Kg<br>
-    <span>Amoxicilina + Ac. Clavulanico:</span> 20 - 40mg / Kg<br>
-    <span>Eritromicina:</span> 30 - 120mg / Kg<br>
-    <span>Azitromicina:</span> 10mg / Kg <br>
-    <span>Claritromicina:</span> 15mg / Kg <br>
-    <span>Clindamicina:</span> 20 - 40mg / Kg <br>
-    <span>Cefalexina:</span> 25 - 50mg / Kg <br>
-    <span>Cefacroxilo:</span> 30mg / Kg <br>
-    <h2>Analgesicos</h2>
-    <span>Acido acetilsalicico:</span> 65mg /Kg<br>
-    <span>Ibuprofeno:</span> 20mg / Kg<br>
-    <span>Propifenazona</span> 10 - 15mg / Kg<br>
-    <span>Metamizol:</span> 15 - 20mg / Kg<br>
-    <span>Diclofenac:</span> 0,5 - 3mg / Kg<br>
-    <span>Acetaminofen:</span> 20mg / Kg
+      <h2>Antibioticos</h2>
+      <span> Amoxicilina:</span> 50mg / Kg<br>
+      <span>Amoxicilina + Ac. Clavulanico:</span> 20 - 40mg / Kg<br>
+      <span>Eritromicina:</span> 30 - 120mg / Kg<br>
+      <span>Azitromicina:</span> 10mg / Kg <br>
+      <span>Claritromicina:</span> 15mg / Kg <br>
+      <span>Clindamicina:</span> 20 - 40mg / Kg <br>
+      <span>Cefalexina:</span> 25 - 50mg / Kg <br>
+      <span>Cefacroxilo:</span> 30mg / Kg <br>
+      <h2>Analgesicos</h2>
+      <span>Acido acetilsalicico:</span> 65mg /Kg<br>
+      <span>Ibuprofeno:</span> 20mg / Kg<br>
+      <span>Propifenazona</span> 10 - 15mg / Kg<br>
+      <span>Metamizol:</span> 15 - 20mg / Kg<br>
+      <span>Diclofenac:</span> 0,5 - 3mg / Kg<br>
+      <span>Acetaminofen:</span> 20mg / Kg
     </div>
   </div>
   <div id="diaria_ayuda">
-      <button id="diaria_close">X</button>
-      <div>
+    <button id="diaria_close">X</button>
+    <div>
       <h2>Antibioticos</h2>
       <span> Amoxicilina:</span> 1 diaria<br>
       <span>Amoxicilina + Ac. Clavulanico:</span> 1 diaria<br>
@@ -59,64 +61,69 @@
       <span>Metamizol:</span> 3 diarias<br>
       <span>Diclofenac:</span> 1 diaria<br>
       <span>Acetaminofen:</span> 4 diarias
-      </div>
     </div>
+  </div>
   <div id="wrapper">
-    <h1>Calculadora de<br>dosis pediátricas</h1>
+    <div id="titulo">
+      <h1>Jarabito</h1>
+      <p>Calculadora de dosis pediátricas</p>
+    </div>
     <hr>
 
     <div id="custom-select">
-        <p id="instruccion">Selecciona el medicamento de la lista si no lo encuentras ingresa los datos de forma manual</p>
-    <select name="Seleccionar" id="select_med">
-      <option value = "opciones" selected disabled>Selecciona el medicamento</option>
-      <optgroup label = Antibioticos>
-      <option value="amoxicilina">Amoxicilina 125mg/5ml</option>
-      <option value="amoxicilinaCla"> Amoxicilina + Ac. Clavulanico 400mg/5ml</option>
-      <option value="eritromicina">Eritromicina 250mg/5ml</option>
-      <option value="azitromicina">Azitromicina 200mg/5ml</option>
-      <option value="claritromicina">Claritromicina 250mg/5ml</option>
-      <option value="clindamicina">Clindamicina 75mg/5ml</option>
-      <option value="cefalexina">Cefalexina 250mg/5ml</option>
-      <option value="cefadroxilo">Cefadroxilo 250mg/5ml</option>
-    </optgroup>
-    <optgroup label = Analgesicos>
-        <option value="diclofenac">Diclofenac 1.8mg / ml</option>
-        <option value="ibuprofeno">Ibuprofeno 100mg / 5ml</option>
-        <option value="acetaminofen">Acetaminofen 150mg / 5ml</option>
-    </optgroup>
-    </select>
-  </div>
+      <p id="instruccion">Selecciona el medicamento de la lista si no lo encuentras ingresa los datos de forma manual
+      </p>
+      <select name="Seleccionar" id="select_med">
+        <option value="opciones" selected disabled>Selecciona el medicamento</option>
+        <optgroup label=Antibioticos>
+          <option value="amoxicilina">Amoxicilina 125mg/5ml</option>
+          <option value="amoxicilinaCla"> Amoxicilina + Ac. Clavulanico 400mg/5ml</option>
+          <option value="eritromicina">Eritromicina 250mg/5ml</option>
+          <option value="azitromicina">Azitromicina 200mg/5ml</option>
+          <option value="claritromicina">Claritromicina 250mg/5ml</option>
+          <option value="clindamicina">Clindamicina 75mg/5ml</option>
+          <option value="cefalexina">Cefalexina 250mg/5ml</option>
+          <option value="cefadroxilo">Cefadroxilo 250mg/5ml</option>
+        </optgroup>
+        <optgroup label=Analgesicos>
+          <option value="diclofenac">Diclofenac 1.8mg / ml</option>
+          <option value="ibuprofeno">Ibuprofeno 100mg / 5ml</option>
+          <option value="acetaminofen">Acetaminofen 150mg / 5ml</option>
+        </optgroup>
+      </select>
+    </div>
 
 
     <form id="dosis_form">
       <label for="peso">Peso del niño (Kg)</label>
       <input type="tel" name="peso" id="peso" value="" placeholder="0" min="1" max="99" maxlength="2">
-      
+
       <label for="dosis">Dosis por kilo (mg)
         <button id="dosis_question" class="dosis_question">?</button>
       </label>
       <input type="tel" name="Ml" id="dosis" value="" placeholder="0" min="1" max="99" maxlength="2">
-      
+
       <label for="dosisXDia">Dosis al día
         <button class="dosis_question" id="dosisDiarias">?</button>
       </label>
       <input type="tel" name="Dosis al dia" id="dosisXDia" value="" placeholder="0" min="1" max="99" maxlength="1">
-      
+
       <label for="ml_del_medicamento">Ml del Medicamento</label>
       <input type="tel" name="Ml" id="ml_del_medicamento" value="" placeholder="0" min="1" max="99" maxlength="2">
-      
+
       <label for="mg_del_medicamento">Mg del Medicamento</label>
       <input type="tel" name="Mg" id="mg_del_medicamento" value="" placeholder="0" min="1" max="999" maxlength="3">
-      
+
     </form>
     <div id="btn">
-    <input type="button" value="Limpiar" id="limpiar" class="button" > 
-    <input type="button" value="Calcular dosis" id="calcular"class="button" >
-  </div>
+      <input type="button" value="Limpiar" id="limpiar" class="button">
+      <input type="button" value="Calcular dosis" id="calcular" class="button">
+    </div>
     <div id="footer">
       <p>Creado por <a href="https://alexisss1928.github.io/">Alexis Salcedo</a></p>
     </div>
   </div>
   <script src="index.js"></script>
 </body>
+
 </html>

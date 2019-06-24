@@ -41,10 +41,7 @@
 
   #titulo p{
     margin-top:0;
-    color: #f6f6f6;
-    text-shadow: 1px 1px #444,
-    2px 2px #444,
-    -1px -1px #444
+    color: #444;
   }
 
   hr{
@@ -59,7 +56,7 @@
     border-radius: 10px;
     border: inset 2px #444;
     display: flex;
-    max-width: 500px;
+    max-width: 400px;
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
@@ -79,15 +76,12 @@
     display:flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    max-width: 300px;
     margin-top: 12px;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
   }
 
   label{
-    width:83%;
+    width:80%;
     text-align: left;
     margin:5px 0;
     line-height: 40px;
@@ -99,7 +93,7 @@
   }
 
   input{
-    width:15%;
+    width:20%;
     border-radius: 0 5px 5px 0;
     background: #82fdef;
     font-size: 25px;
@@ -131,6 +125,7 @@
     background: #ffd2d2;
     color: #36393B;
     border-top: solid 5px #ffa5a5;
+    margin-right: 15px
   }
   .button:active{
     background: #ffa5a5
@@ -155,7 +150,7 @@
     width: 120%;
     transform: translateY(20px);
     color: #f6f6f6;
-    font-size: 12px
+    font-size: 12px;
   }
 
   .dosis_question{

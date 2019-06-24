@@ -51,6 +51,13 @@
     align-items: center
   }
 
+  #custom-select{
+    background: hsla(174, 70%, 91%, .7);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px
+  }
+
   form{
     text-align: center;
     display:-webkit-box;
@@ -213,6 +220,23 @@
   a{
     text-decoration: none;
     color: #58b368;
+  }
+
+  select{
+    border: none;
+    background: #ffd2d2;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 5px;
+    padding: 10px;
+    width: 90%;
+  }
+
+  optgroup{
+    font-size: 16px;
+  }
+
+  option{
+    font-size: 12px
   }
 
   @media (max-width: 480px){

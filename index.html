@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Dosis pediatricas</title>
   <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
   <div id="alert">
@@ -21,8 +22,8 @@
     <span>Eritromicina:</span> 30 - 120mg / Kg<br>
     <span>Azitromicina:</span> 10mg / Kg <br>
     <span>Claritromicina:</span> 15mg / Kg <br>
-    <span>Clindamicina:</span> 20mg / Kg <br>
-    <span>Cefalexina:</span> 25 - 100mg / Kg <br>
+    <span>Clindamicina:</span> 20 - 40mg / Kg <br>
+    <span>Cefalexina:</span> 25 - 50mg / Kg <br>
     <span>Cefacroxilo:</span> 30mg / Kg <br>
     <h2>Analgesicos</h2>
     <span>Acido acetilsalicico:</span> 65mg /Kg<br>
@@ -42,8 +43,8 @@
       <span>Eritromicina:</span> 1 diaria<br>
       <span>Azitromicina:</span> 1 diaria<br>
       <span>Claritromicina:</span> 1 diaria<br>
-      <span>Clindamicina:</span> 1 diaria<br>
-      <span>Cefalexina:</span> 1 diaria<br>
+      <span>Clindamicina:</span> 3 diaria<br>
+      <span>Cefalexina:</span> 4 diaria<br>
       <span>Cefacroxilo:</span> 2 diarias<br>
       <h2>Analgesicos</h2>
       <span>Acido acetilsalicico:</span> 4 diarias<br>
@@ -57,6 +58,30 @@
   <div id="wrapper">
     <h1>Calculadora de<br>dosis pediátricas</h1>
     <hr>
+
+    <div id="custom-select">
+        <p id="instruccion">Selecciona el medicamento de la lista si no lo encuentras ingresa los datos de forma manual</p>
+    <select name="Seleccionar" id="select_med">
+      <option value = "opciones" selected disabled>Selecciona el medicamento</option>
+      <optgroup label = Antibioticos>
+      <option value="amoxicilina">Amoxicilina 125mg/5ml</option>
+      <option value="amoxicilinaCla"> Amoxicilina + Ac. Clavulanico 400mg/5ml</option>
+      <option value="eritromicina">Eritromicina 250mg/5ml</option>
+      <option value="azitromicina">Azitromicina 200mg/5ml</option>
+      <option value="claritromicina">Claritromicina 250mg/5ml</option>
+      <option value="clindamicina">Clindamicina 75mg/5ml</option>
+      <option value="cefalexina">Cefalexina 250mg/5ml</option>
+      <option value="cefadroxilo">Cefadroxilo 250mg/5ml</option>
+    </optgroup>
+    <optgroup label = Analgesicos>
+        <option value="diclofenac">Diclofenac 1.8mg / ml</option>
+        <option value="ibuprofeno">Ibuprofeno 100mg / 5ml</option>
+        <option value="acetaminofen">Acetaminofen 150mg / 5ml</option>
+    </optgroup>
+    </select>
+  </div>
+
+
     <form id="dosis_form">
       <label for="peso">Peso del niño (Kg)</label>
       <input type="tel" name="peso" id="peso" value="" placeholder="0" min="1" max="99" maxlength="2">

@@ -10,6 +10,15 @@ document.querySelector("#calcular").addEventListener("click", function(){
   const dosisMl = (dosisMaxDiaria * mL) / mG;
   const dosisFinal = dosisMl / dosisDia;
 
+  console.log(peso)
+  console.log(dosis)
+  console.log(dosisDia)
+  console.log(mL)
+  console.log(mG)
+  console.log(dosisMaxDiaria)
+  console.log(dosisMl)
+  console.log(dosisFinal)
+
 //Verificar si falta algun dato o resolver la dosis
 if (peso === "" || dosis === "" || dosisDia === "" || mL === "" || mG === ""){
   document.querySelector("#alert").classList.add("unhide");
@@ -52,4 +61,92 @@ document.querySelector("#dosisDiarias").addEventListener("click", function(){
 //Cerrar ayuda de dosis diarias
 document.querySelector("#diaria_close").addEventListener("click", function(){
   document.querySelector("#diaria_ayuda").classList.remove("unhide");
+})
+
+const amoxicilina = {
+  dosisKilo: 50,
+  dosisDia: 1,
+  mL: 5,
+  mG: 125
+}
+
+const amoxicilinaCla = {
+  dosisKilo: 40,
+  dosisDia: 1,
+  mL: 5,
+  mG: 400
+}
+
+const eritromicina = {
+  dosisKilo: 50,
+  dosisDia: 1,
+  mL: 250,
+  mG: 5
+}
+
+const azitromicina = {
+  dosisKilo: 10,
+  dosisDia: 1,
+  mL: 5,
+  mG: 200
+}
+
+const claritromicina = {
+  dosisKilo: 15,
+  dosisDia: 1,
+  mL: 5,
+  mG: 250
+}
+
+const clindamicina = {
+  dosisKilo: 20,
+  dosisDia: 1,
+  mL: 5,
+  mG: 75
+}
+
+const cefalexina = {
+  dosisKilo: 50,
+  dosisDia: 4,
+  mL: 250,
+  mG: 5
+}
+
+const cefadroxilo = {
+  dosisKilo: 30,
+  dosisDia: 2,
+  mL: 5,
+  mG: 250
+}
+
+const diclofenac = {
+  dosisKilo: 3,
+  dosisDia: 1,
+  mL: 1,
+  mG: 1.8
+}
+
+const ibuprofeno = {
+  dosisKilo: 20,
+  dosisDia: 3,
+  mL: 5,
+  mG: 100
+}
+
+const acetaminofen = {
+  dosisKilo: 20,
+  dosisDia: 4,
+  mL: 5,
+  mG: 150
+}
+
+
+
+document.querySelector("#select_med").addEventListener("change", function(){
+  const med = eval(document.querySelector("#select_med").value)
+  
+  document.querySelector("#dosis").value = med.dosisKilo;
+  document.querySelector("#dosisXDia").value = med.dosisDia;
+  document.querySelector("#ml_del_medicamento").value = med.mL;
+  document.querySelector("#mg_del_medicamento").value = med.mG;
 })

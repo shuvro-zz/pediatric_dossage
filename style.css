@@ -125,10 +125,15 @@
     background: #ffd2d2;
     color: #36393B;
     border-top: solid 5px #ffa5a5;
-    margin-right: 15px
   }
   .button:active{
     background: #ffa5a5
+  }
+
+  #btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly
   }
 
   #limpiar{

@@ -60,84 +60,238 @@ document.querySelector("#limpiar").addEventListener("click", function(){
   document.getElementById("dosis_form").reset();
 })
 
-const amoxicilina = {
-  dosisKilo: 50,
-  dosisDia: 1,
+
+const acetaminofen = {
+  dosisKilo: 20,
+  dosisDia: 4,
   mL: 5,
-  mG: 125
+  mG: 150,
+  comercial: "Atamel, Tachipirin, Tempra"
 }
 
-const amoxicilinaCla = {
-  dosisKilo: 40,
-  dosisDia: 1,
-  mL: 5,
-  mG: 400
+const dipirona = {
+  dosisKilo: 12,
+  dosisDia: 4,
+  mL: 1,
+  mG: 50,
+  comercial: "Bral, Conmel, Novalcina"
 }
 
-const eritromicina = {
+const diclofenac = {
+  dosisKilo: 2,
+  dosisDia: 2,
+  mL: 1,
+  mG: 1.8,
+  comercial: "Cataflan, Clofen"
+}
+
+const ibuprofeno = {
+  dosisKilo: 10,
+  dosisDia: 2,
+  mL: 5,
+  mG: 100,
+  comercial: "Brugesic"
+}
+
+const ketoprofeno = {
+  dosisKilo: 0.5,
+  dosisDia: 3,
+  mL: 1,
+  mG: 1,
+  comercial: "Profenid"
+}
+
+const amoxicilina125 = {
+  dosisKilo: 90,
+  dosisDia: 3,
+  mL: 5,
+  mG: 125,
+  comercial: "Trimoxal, Amoxal, Genfar, Amoxiduo"
+}
+
+const amoxicilina250 = {
+  dosisKilo: 90,
+  dosisDia: 3,
+  mL: 5,
+  mG: 250,
+  comercial: "Trimoxal, Amoxal, Genfar, Amoxiduo"
+}
+
+const amoxicilina500 = {
+  dosisKilo: 90,
+  dosisDia: 3,
+  mL: 5,
+  mG: 500,
+  comercial: "Trimoxal, Amoxal, Genfar, Amoxiduo"
+}
+
+const amoxicilina750 = {
+  dosisKilo: 90,
+  dosisDia: 2,
+  mL: 5,
+  mG: 750,
+  comercial: "Trimoxal, Amoxal, Genfar, Amoxiduo"
+}
+
+const amoxicilinaCla250 = {
+  dosisKilo: 90,
+  dosisDia: 3,
+  mL: 5,
+  mG: 250,
+  comercial: "Augmentin, Fulgram"
+}
+
+const amoxicilinaCla400 = {
+  dosisKilo: 90,
+  dosisDia: 3,
+  mL: 5,
+  mG: 400,
+  comercial: "Augmentin, Fulgram"
+}
+
+const amoxicilinaCla600 = {
+  dosisKilo: 90,
+  dosisDia: 2,
+  mL: 5,
+  mG: 600,
+  comercial: "Augmentin, Fulgram"
+}
+
+const eritromicina150 = {
   dosisKilo: 50,
-  dosisDia: 1,
-  mL: 250,
-  mG: 5
+  dosisDia: 4,
+  mL: 5,
+  mG: 150,
+  comercial: "Ilosone"
+}
+
+const eritromicina250 = {
+  dosisKilo: 50,
+  dosisDia: 4,
+  mL: 5,
+  mG: 250,
+  comercial: "Ilosone"
+}
+
+const claritromicina125 = {
+  dosisKilo: 7.5,
+  dosisDia: 2,
+  mL: 5,
+  mG: 125,
+  comercial: "Claricid"
+}
+
+const claritromicina250 = {
+  dosisKilo: 7.5,
+  dosisDia: 2,
+  mL: 5,
+  mG: 250,
+  comercial: "Claricid"
 }
 
 const azitromicina = {
   dosisKilo: 10,
   dosisDia: 1,
   mL: 5,
-  mG: 200
+  mG: 200,
+  comercial: "Zitromax"
 }
 
-const claritromicina = {
+const sultamicilina = {
+  dosisKilo: 50,
+  dosisDia: 2,
+  mL: 5,
+  mG: 250,
+  comercial: "Unasyn"
+}
+
+const cefadroxilo250 = {
+  dosisKilo: 50,
+  dosisDia: 2,
+  mL: 5,
+  mG: 250,
+  comercial: "Bidroxil, Cefonax"
+}
+
+const cefadroxilo500 = {
+  dosisKilo: 50,
+  dosisDia: 2,
+  mL: 5,
+  mG: 500,
+  comercial: "Bidroxil, Cefonax"
+}
+
+const metronidazol125 = {
+  dosisKilo: 50,
+  dosisDia: 4,
+  mL: 5,
+  mG: 125,
+  comercial: "Flegyl, Metrovax"
+}
+
+const metronidazol250 = {
+  dosisKilo: 50,
+  dosisDia: 4,
+  mL: 5,
+  mG: 250,
+  comercial: "Flegyl, Metrovax"
+}
+
+const amoxicilinaPre125= {
+  dosisKilo: 50,
+  dosisDia: 1,
+  mL: 5,
+  mG: 125,
+  nota: ">27Kg y adultos 2g"
+}
+
+const amoxicilinaPre250= {
+  dosisKilo: 50,
+  dosisDia: 1,
+  mL: 5,
+  mG: 250,
+  nota: ">27Kg y adultos 2g"
+}
+
+const amoxicilinaPre500= {
+  dosisKilo: 50,
+  dosisDia: 1,
+  mL: 5,
+  mG: 500,
+  nota: ">27Kg y adultos 2g"
+}
+
+const amoxicilinaPre750= {
+  dosisKilo: 50,
+  dosisDia: 1,
+  mL: 5,
+  mG: 750,
+  nota: ">27Kg y adultos 2g"
+}
+
+const azitromicinaPre= {
   dosisKilo: 15,
   dosisDia: 1,
   mL: 5,
-  mG: 250
+  mG: 200,
+  nota: ">27Kg y adultos 500mg"
 }
 
-const clindamicina = {
-  dosisKilo: 20,
+const claritromicinaPre125= {
+  dosisKilo: 15,
   dosisDia: 1,
   mL: 5,
-  mG: 75
+  mG: 125,
+  nota: ">27Kg y adultos 500mg"
 }
 
-const cefalexina = {
-  dosisKilo: 50,
-  dosisDia: 4,
-  mL: 250,
-  mG: 5
-}
-
-const cefadroxilo = {
-  dosisKilo: 30,
-  dosisDia: 2,
-  mL: 5,
-  mG: 250
-}
-
-const diclofenac = {
-  dosisKilo: 3,
+const claritromicinaPre250= {
+  dosisKilo: 15,
   dosisDia: 1,
-  mL: 1,
-  mG: 1.8
-}
-
-const ibuprofeno = {
-  dosisKilo: 20,
-  dosisDia: 3,
   mL: 5,
-  mG: 100
+  mG: 250,
+  nota: ">27Kg y adultos 500mg"
 }
-
-const acetaminofen = {
-  dosisKilo: 20,
-  dosisDia: 4,
-  mL: 5,
-  mG: 150
-}
-
-
 
 document.querySelector("#select_med").addEventListener("change", function(){
   const med = eval(document.querySelector("#select_med").value)
@@ -146,4 +300,5 @@ document.querySelector("#select_med").addEventListener("change", function(){
   document.querySelector("#dosisXDia").value = med.dosisDia;
   document.querySelector("#ml_del_medicamento").value = med.mL;
   document.querySelector("#mg_del_medicamento").value = med.mG;
+  document.querySelector("#presentaciones p").textContent = med.nota || "Nombre comercial: " + med.comercial; 
 })

@@ -290,6 +290,7 @@ const claritromicinaPre250= {
   dosisDia: 1,
   mL: 5,
   mG: 250,
+  comercial: "Claricid",
   nota: ">27Kg y adultos 500mg"
 }
 

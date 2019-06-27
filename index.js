@@ -242,7 +242,7 @@ const amoxicilinaPre125= {
   dosisDia: 1,
   mL: 5,
   mG: 125,
-  nota: ">27Kg y adultos 2g"
+  nota: "En niños con mas de 27Kg y adultos administrar una dosis unica de 2g"
 }
 
 const amoxicilinaPre250= {
@@ -250,7 +250,7 @@ const amoxicilinaPre250= {
   dosisDia: 1,
   mL: 5,
   mG: 250,
-  nota: ">27Kg y adultos 2g"
+  nota: "En niños con mas de 27Kg y adultos administrar una dosis unica de 2g"
 }
 
 const amoxicilinaPre500= {
@@ -258,7 +258,7 @@ const amoxicilinaPre500= {
   dosisDia: 1,
   mL: 5,
   mG: 500,
-  nota: ">27Kg y adultos 2g"
+  nota: "En niños con mas de 27Kg y adultos administrar una dosis unica de 2g"
 }
 
 const amoxicilinaPre750= {
@@ -266,7 +266,7 @@ const amoxicilinaPre750= {
   dosisDia: 1,
   mL: 5,
   mG: 750,
-  nota: ">27Kg y adultos 2g"
+  nota: "En niños con mas de 27Kg y adultos administrar una dosis unica de 2g"
 }
 
 const azitromicinaPre= {
@@ -274,7 +274,7 @@ const azitromicinaPre= {
   dosisDia: 1,
   mL: 5,
   mG: 200,
-  nota: ">27Kg y adultos 500mg"
+  nota: "En niños con mas de 27Kg y adultos administrar una dosis unica de 500mg"
 }
 
 const claritromicinaPre125= {
@@ -282,7 +282,7 @@ const claritromicinaPre125= {
   dosisDia: 1,
   mL: 5,
   mG: 125,
-  nota: ">27Kg y adultos 500mg"
+  nota: "En niños con mas de 27Kg y adultos administrar una dosis unica de 500mg"
 }
 
 const claritromicinaPre250= {
@@ -291,7 +291,7 @@ const claritromicinaPre250= {
   mL: 5,
   mG: 250,
   comercial: "Claricid",
-  nota: ">27Kg y adultos 500mg"
+  nota: "En niños con mas de 27Kg y adultos administrar una dosis unica de 500mg"
 }
 
 document.querySelector("#select_med").addEventListener("change", function(){

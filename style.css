@@ -290,7 +290,7 @@ select::-ms-expand {
   right: 0;
   padding: 0 1em;
   background:#ffd2d2;
-  border-left: solid 2px #ca3e47;
+  border-left: solid 2px hsla(174, 70%, 91%, .7);
   cursor: pointer;
   pointer-events: none;
   -webkit-transition: .25s all ease;

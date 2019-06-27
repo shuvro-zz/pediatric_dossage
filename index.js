@@ -58,6 +58,10 @@ document.querySelector("#diaria_close").addEventListener("click", function(){
 //Limpiar inputs del formulario
 document.querySelector("#limpiar").addEventListener("click", function(){
   document.getElementById("dosis_form").reset();
+  document.getElementById("select_med").value = 'opciones';
+  document.querySelector("#notas p").textContent = "";
+  document.querySelector("#contra p").innerHTML = ""
+  document.querySelector("#presentaciones p").innerHTML = ""; 
 })
 
 

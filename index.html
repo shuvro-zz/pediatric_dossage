@@ -162,7 +162,14 @@
       <p><i class="fas fa-coffee"></i> Creado por <a href="https://alexisss1928.github.io/">&lt;Alexis Salcedo&gt;</a></p>
     </div>
   </div>
-  <script src="js/index.js"></script>
+  <script async src="js/index.js"></script>
+  <script>
+    if('serviceWorker' in navigator){
+      window.addEventListener('load', () =>{
+        navigator.serviceWorker.register('/sw.js')
+      });
+    }
+  </script>
 </body>
 
 </html>

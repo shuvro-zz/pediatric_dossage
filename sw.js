@@ -1,4 +1,4 @@
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/ workbox-sw.js');
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js');
 
 // Cache the Google Fonts stylesheets with a stale-while-revalidate strategy.
 workbox.routing.registerRoute(
@@ -33,7 +33,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "c79dbbd92415c9d7aab387bfc4f46504"
+    "revision": "2e9b849ead29e7c8f61551890b136f96"
   },
   {
     "url": "js/index.js",
@@ -41,7 +41,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "src-sw.js",
-    "revision": "46d2170849a0b0a0e5252a4f459a4287"
+    "revision": "8c105c33348448389064a6a05f4a13fe"
   },
   {
     "url": "workbox-config.js",

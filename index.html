@@ -17,43 +17,49 @@
   <div id="dosis_ayuda">
     <button id="ayuda_close">X</button>
     <div>
-      <h2>Antibioticos</h2>
-      <span> Amoxicilina:</span> 50mg / Kg<br>
-      <span>Amoxicilina + Ac. Clavulanico:</span> 20 - 40mg / Kg<br>
-      <span>Eritromicina:</span> 30 - 120mg / Kg<br>
-      <span>Azitromicina:</span> 10mg / Kg <br>
-      <span>Claritromicina:</span> 15mg / Kg <br>
-      <span>Clindamicina:</span> 20 - 40mg / Kg <br>
-      <span>Cefalexina:</span> 25 - 50mg / Kg <br>
-      <span>Cefacroxilo:</span> 30mg / Kg <br>
       <h2>Analgesicos</h2>
-      <span>Acido acetilsalicico:</span> 65mg /Kg<br>
-      <span>Ibuprofeno:</span> 20mg / Kg<br>
-      <span>Propifenazona</span> 10 - 15mg / Kg<br>
-      <span>Metamizol:</span> 15 - 20mg / Kg<br>
-      <span>Diclofenac:</span> 0,5 - 3mg / Kg<br>
-      <span>Acetaminofen:</span> 20mg / Kg
+        <span>Acetaminofen:</span> 10 - 15mg / Kg<br>
+        <span>Dipirona:</span> 10 - 12mg / Kg <br>
+      <h2>AINE's</h2>
+        <span>Acido acetilsalicico:</span> 60mg / Kg<br>
+        <span>Ibuprofeno:</span> 5 - 10mg / Kg<br>
+        <span>Diclofenac:</span> 0.5 - 2mg / Kg<br>
+        <span>Ketoprofeno</span> 0.5mg / Kg <br>
+        <span>Nimesulide</span> 50 - 100mg cada 12 horas <br>
+      <h2>Antibioticos</h2>
+        <span>Amoxicilina:</span> 80 - 90mg / Kg<br>
+        <span>Amoxicilina + Ac. Clavulanico:</span> 80 - 90mg / Kg<br>
+        <span>Eritromicina:</span> 50mg / Kg<br>
+        <span>Claritromicina:</span> 7.5mg / Kg <br>
+        <span>Azitromicina:</span> 10mg / Kg <br>
+        <span>Clindamicina:</span> 20 - 40mg / Kg <br>
+        <span>Sultamicilina</span> 25 - 50mg / Kg <br>
+        <span>Cefadroxilo:</span> 25 - 50mg / Kg <br>
+        <span>Metronidazol:</span> 40 - 50mg / Kg <br>
     </div>
   </div>
   <div id="diaria_ayuda">
     <button id="diaria_close">X</button>
     <div>
-      <h2>Antibioticos</h2>
-      <span> Amoxicilina:</span> 1 diaria<br>
-      <span>Amoxicilina + Ac. Clavulanico:</span> 1 diaria<br>
-      <span>Eritromicina:</span> 1 diaria<br>
-      <span>Azitromicina:</span> 1 diaria<br>
-      <span>Claritromicina:</span> 1 diaria<br>
-      <span>Clindamicina:</span> 3 diaria<br>
-      <span>Cefalexina:</span> 4 diaria<br>
-      <span>Cefacroxilo:</span> 2 diarias<br>
       <h2>Analgesicos</h2>
-      <span>Acido acetilsalicico:</span> 4 diarias<br>
-      <span>Ibuprofeno:</span> 3 diarias<br>
-      <span>Propifenazona</span> 3 diarias<br>
-      <span>Metamizol:</span> 3 diarias<br>
-      <span>Diclofenac:</span> 1 diaria<br>
-      <span>Acetaminofen:</span> 4 diarias
+        <span>Acetaminofen:</span> 4 - 6 diarias<br>
+        <span>Dipirona:</span> 4 diarias<br>
+      <h2>AINE's</h2>
+        <span>Acido acetilsalicico:</span> 4 - 6 diarias<br>
+        <span>Ibuprofeno:</span>2 - 3 diarias<br>
+        <span>Diclofenac:</span> 2 - 3 diarias<br>
+        <span>Ketoprofeno</span> 3 - 4 diarias<br>
+        <span>Nimesulide</span> 2 diarias<br>
+      <h2>Antibioticos</h2>
+        <span>Amoxicilina:</span> 3 diarias<br>
+        <span>Amoxicilina + Ac. Clavulanico:</span> 2 - 3 diarias<br>
+        <span>Eritromicina:</span> 4 diarias<br>
+        <span>Claritromicina:</span> 2 diarias<br>
+        <span>Azitromicina:</span> Una dosis diaria por 3 dias<br>
+        <span>Clindamicina:</span> 4 diarias<br>
+        <span>Sultamicilina</span> 2 diarias<br>
+        <span>Cefadroxilo:</span> 2 diarias<br>
+        <span>Metronidazol:</span> 4 diarias<br>
     </div>
   </div>
   <div id="wrapper">
@@ -108,10 +114,19 @@
       </select>
 
     </div>
+
+      <div id="notas">
+        <p></p>
+      </div>
+      <div id="contra">
+        <p></p>
+      </div>
       <div id="presentaciones">
         <p></p>
       </div>
+      
     </div>
+    
 
 
     <form id="dosis_form">
@@ -128,11 +143,13 @@
       </label>
       <input type="tel" name="Dosis al dia" id="dosisXDia" value="" placeholder="0" min="1" max="99" maxlength="1">
 
+      <label for="mg_del_medicamento">Mg del Medicamento</label>
+      <input type="tel" name="Mg" id="mg_del_medicamento" value="" placeholder="0" min="1" max="999" maxlength="3">
+
       <label for="ml_del_medicamento">Ml del Medicamento</label>
       <input type="tel" name="Ml" id="ml_del_medicamento" value="" placeholder="0" min="1" max="99" maxlength="2">
 
-      <label for="mg_del_medicamento">Mg del Medicamento</label>
-      <input type="tel" name="Mg" id="mg_del_medicamento" value="" placeholder="0" min="1" max="999" maxlength="3">
+      
 
     </form>
 

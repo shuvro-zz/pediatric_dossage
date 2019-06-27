@@ -15,7 +15,7 @@
     height: 100vh;
     margin:0;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 100%;
+    font-size: 14px;
     color: #444;
   }
 
@@ -62,7 +62,7 @@
     overflow-x: hidden;
   }
 
-  #presentaciones p{
+  #presentaciones p, #notas p, #contra p{
     font-size: 12px
   }
 
@@ -188,7 +188,8 @@
     max-height: 70vh;
     overflow-y: auto;
     overflow-x: hidden;
-    transition: .5s 
+    transition: .5s;
+    z-index: 999
   }
 
   #alert::-webkit-scrollbar,
@@ -243,10 +244,9 @@
     border: dashed 2px #444;
     box-sizing: border-box;
     background-color: #d8f8f5;
-
   }
 
-  #dosis_ayuda span, #diaria_ayuda span{
+  #dosis_ayuda span, #diaria_ayuda span, #contra span, #presentaciones span{
     color: #ca3e47;
   }
 
@@ -289,7 +289,7 @@ select::-ms-expand {
   top: 0;
   right: 0;
   padding: 0 1em;
-  background:#7ad9f5;
+  background:#ffd2d2;
   border-left: solid 2px #ca3e47;
   cursor: pointer;
   pointer-events: none;
@@ -299,7 +299,7 @@ select::-ms-expand {
 }
 
 .select:hover::after {
-  color: #f39c12;
+  color: #82fdef;
 }
 
   optgroup{

@@ -66,6 +66,8 @@ const acetaminofen = {
   dosisDia: 4,
   mL: 5,
   mG: 150,
+  nota:"Puede indicarse durante el embarazo",
+  contra:"Trastornos hepáticos, no administrar por periodos mayores a 10 días",
   comercial: "Atamel, Tachipirin, Tempra"
 }
 
@@ -74,6 +76,8 @@ const dipirona = {
   dosisDia: 4,
   mL: 1,
   mG: 50,
+  nota: "Pacientes con trastornos hepáticos, ultima opción",
+  contra:"Disminuye resistencia a infecciones",
   comercial: "Bral, Conmel, Novalcina"
 }
 
@@ -82,6 +86,8 @@ const diclofenac = {
   dosisDia: 2,
   mL: 1,
   mG: 1.8,
+  nota: "Se recomienda su uso en niños mayores de 1 año",
+  contra:"",
   comercial: "Cataflan, Clofen"
 }
 
@@ -90,6 +96,8 @@ const ibuprofeno = {
   dosisDia: 2,
   mL: 5,
   mG: 100,
+  nota: "Se recomienda su uso en niños mayores de 2 años",
+  contra:"Antiagregante plaquetario en menor grado",
   comercial: "Brugesic"
 }
 
@@ -98,6 +106,8 @@ const ketoprofeno = {
   dosisDia: 3,
   mL: 1,
   mG: 1,
+  nota: "Excelente en traumatismos, se recomienda su uso en niños a partir de 6 meses",
+  contra:"",
   comercial: "Profenid"
 }
 
@@ -106,6 +116,8 @@ const amoxicilina125 = {
   dosisDia: 3,
   mL: 5,
   mG: 125,
+  nota: "Actuá sobre la mayoría de microorganismos de la cavidad bucal",
+  contra:"",
   comercial: "Trimoxal, Amoxal, Genfar, Amoxiduo"
 }
 
@@ -114,6 +126,8 @@ const amoxicilina250 = {
   dosisDia: 3,
   mL: 5,
   mG: 250,
+  nota: "Actuá sobre la mayoría de microorganismos de la cavidad bucal",
+  contra:"",
   comercial: "Trimoxal, Amoxal, Genfar, Amoxiduo"
 }
 
@@ -122,6 +136,8 @@ const amoxicilina500 = {
   dosisDia: 3,
   mL: 5,
   mG: 500,
+  nota: "Actuá sobre la mayoría de microorganismos de la cavidad bucal",
+  contra:"",
   comercial: "Trimoxal, Amoxal, Genfar, Amoxiduo"
 }
 
@@ -130,6 +146,8 @@ const amoxicilina750 = {
   dosisDia: 2,
   mL: 5,
   mG: 750,
+  nota: "Actuá sobre la mayoría de microorganismos de la cavidad bucal",
+  contra:"",
   comercial: "Trimoxal, Amoxal, Genfar, Amoxiduo"
 }
 
@@ -138,6 +156,8 @@ const amoxicilinaCla250 = {
   dosisDia: 3,
   mL: 5,
   mG: 250,
+  nota: "Niños mayores de 40Kg se maneja como adulto",
+  contra:"Se ha reportado pigmentación en las superficies dentales",
   comercial: "Augmentin, Fulgram"
 }
 
@@ -146,6 +166,8 @@ const amoxicilinaCla400 = {
   dosisDia: 3,
   mL: 5,
   mG: 400,
+  nota: "Niños mayores de 40Kg se maneja como adulto",
+  contra:"Se ha reportado pigmentación en las superficies dentales",
   comercial: "Augmentin, Fulgram"
 }
 
@@ -154,6 +176,8 @@ const amoxicilinaCla600 = {
   dosisDia: 2,
   mL: 5,
   mG: 600,
+  nota: "Niños mayores de 40Kg se maneja como adulto",
+  contra:"Se ha reportado pigmentación en las superficies dentales",
   comercial: "Augmentin, Fulgram"
 }
 
@@ -162,6 +186,8 @@ const eritromicina150 = {
   dosisDia: 4,
   mL: 5,
   mG: 150,
+  nota: "En desuso, siempre debe drenarse absceso antes de indicarlo",
+  contra:"",
   comercial: "Ilosone"
 }
 
@@ -170,6 +196,8 @@ const eritromicina250 = {
   dosisDia: 4,
   mL: 5,
   mG: 250,
+  nota: "En desuso, siempre debe drenarse absceso antes de indicarlo",
+  contra:"",
   comercial: "Ilosone"
 }
 
@@ -178,7 +206,9 @@ const claritromicina125 = {
   dosisDia: 2,
   mL: 5,
   mG: 125,
-  comercial: "Claricid"
+  nota: "",
+  contra:"",
+  comercial: "klaricid"
 }
 
 const claritromicina250 = {
@@ -186,7 +216,9 @@ const claritromicina250 = {
   dosisDia: 2,
   mL: 5,
   mG: 250,
-  comercial: "Claricid"
+  nota: "",
+  contra:"",
+  comercial: "Klaricid"
 }
 
 const azitromicina = {
@@ -194,6 +226,8 @@ const azitromicina = {
   dosisDia: 1,
   mL: 5,
   mG: 200,
+  nota: "",
+  contra:"",
   comercial: "Zitromax"
 }
 
@@ -202,6 +236,8 @@ const sultamicilina = {
   dosisDia: 2,
   mL: 5,
   mG: 250,
+  nota: "Niños mayores de 30Kg se maneja como adulto",
+  contra:"",
   comercial: "Unasyn"
 }
 
@@ -210,6 +246,8 @@ const cefadroxilo250 = {
   dosisDia: 2,
   mL: 5,
   mG: 250,
+  nota: "Ideal para infecciones en tejido blando",
+  contra:"En pacientes alérgicos a la penicilina puede crear reacción cruzada",
   comercial: "Bidroxil, Cefonax"
 }
 
@@ -218,6 +256,8 @@ const cefadroxilo500 = {
   dosisDia: 2,
   mL: 5,
   mG: 500,
+  nota: "Ideal para infecciones en tejido blando",
+  contra:"En pacientes alérgicos a la penicilina puede crear reacción cruzada",
   comercial: "Bidroxil, Cefonax"
 }
 
@@ -226,6 +266,8 @@ const metronidazol125 = {
   dosisDia: 4,
   mL: 5,
   mG: 125,
+  nota: "",
+  contra:"No se debe mezclar con alcohol etílico por riesgo de efecto antabus, se debe esperar 48 horas",
   comercial: "Flegyl, Metrovax"
 }
 
@@ -234,6 +276,8 @@ const metronidazol250 = {
   dosisDia: 4,
   mL: 5,
   mG: 250,
+  nota: "",
+  contra:"No se debe mezclar con alcohol etílico por riesgo de efecto antabus, se debe esperar 48 horas",
   comercial: "Flegyl, Metrovax"
 }
 
@@ -242,7 +286,9 @@ const amoxicilinaPre125= {
   dosisDia: 1,
   mL: 5,
   mG: 125,
-  nota: "En niños con mas de 27Kg y adultos administrar una dosis unica de 2g"
+  comercial: "Trimoxal, Amoxal, Genfar, Amoxiduo",
+  contra:"",
+  nota: "En niños con mas de 27Kg y adultos administrar una dosis única de 2g"
 }
 
 const amoxicilinaPre250= {
@@ -250,7 +296,9 @@ const amoxicilinaPre250= {
   dosisDia: 1,
   mL: 5,
   mG: 250,
-  nota: "En niños con mas de 27Kg y adultos administrar una dosis unica de 2g"
+  comercial: "Trimoxal, Amoxal, Genfar, Amoxiduo",
+  contra:"",
+  nota: "En niños con mas de 27Kg y adultos administrar una dosis única de 2g"
 }
 
 const amoxicilinaPre500= {
@@ -258,7 +306,9 @@ const amoxicilinaPre500= {
   dosisDia: 1,
   mL: 5,
   mG: 500,
-  nota: "En niños con mas de 27Kg y adultos administrar una dosis unica de 2g"
+  comercial: "Trimoxal, Amoxal, Genfar, Amoxiduo",
+  contra:"",
+  nota: "En niños con mas de 27Kg y adultos administrar una dosis única de 2g"
 }
 
 const amoxicilinaPre750= {
@@ -266,7 +316,9 @@ const amoxicilinaPre750= {
   dosisDia: 1,
   mL: 5,
   mG: 750,
-  nota: "En niños con mas de 27Kg y adultos administrar una dosis unica de 2g"
+  comercial: "Trimoxal, Amoxal, Genfar, Amoxiduo",
+  contra:"",
+  nota: "En niños con mas de 27Kg y adultos administrar una dosis única de 2g"
 }
 
 const azitromicinaPre= {
@@ -274,7 +326,9 @@ const azitromicinaPre= {
   dosisDia: 1,
   mL: 5,
   mG: 200,
-  nota: "En niños con mas de 27Kg y adultos administrar una dosis unica de 500mg"
+  comercial: "Zitromax",
+  contra:"",
+  nota: "En niños con mas de 27Kg y adultos administrar una dosis única de 500mg"
 }
 
 const claritromicinaPre125= {
@@ -282,7 +336,9 @@ const claritromicinaPre125= {
   dosisDia: 1,
   mL: 5,
   mG: 125,
-  nota: "En niños con mas de 27Kg y adultos administrar una dosis unica de 500mg"
+  comercial: "Claricid",
+  contra:"",
+  nota: "En niños con mas de 27Kg y adultos administrar una dosis única de 500mg"
 }
 
 const claritromicinaPre250= {
@@ -291,7 +347,8 @@ const claritromicinaPre250= {
   mL: 5,
   mG: 250,
   comercial: "Claricid",
-  nota: "En niños con mas de 27Kg y adultos administrar una dosis unica de 500mg"
+  contra:"",
+  nota: "En niños con mas de 27Kg y adultos administrar una dosis única de 500mg",
 }
 
 document.querySelector("#select_med").addEventListener("change", function(){
@@ -301,5 +358,8 @@ document.querySelector("#select_med").addEventListener("change", function(){
   document.querySelector("#dosisXDia").value = med.dosisDia;
   document.querySelector("#ml_del_medicamento").value = med.mL;
   document.querySelector("#mg_del_medicamento").value = med.mG;
-  document.querySelector("#presentaciones p").textContent = med.nota || "Nombre comercial: " + med.comercial; 
+  document.querySelector("#notas p").textContent = med.nota;
+  (med.contra !== "") ? document.querySelector("#contra p").innerHTML = "<span>Contraindicaciones: </span>" + med.contra : document.querySelector("#contra p").innerHTML = ""
+  document.querySelector("#presentaciones p").innerHTML = "<span>Nombre comercial: </span>" + med.comercial; 
+  
 })

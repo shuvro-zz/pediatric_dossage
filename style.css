@@ -20,7 +20,6 @@
   }
 
   h1, h2{
-    font-size: 1.6em;
     color: #ffa5a5;
     font-family: 'Chango', cursive, sans-serif;
     text-shadow: 1px 1px #444,
@@ -33,6 +32,11 @@
   h1{
     font-size: 2.7em;
     margin-top: 0;
+  }
+
+  
+  h2{
+    font-size: 1.4em;
   }
 
   #titulo h1{
@@ -308,7 +312,8 @@ select::-ms-expand {
   }
 
   option{
-    font-size: 12px
+    font-size: 12px;
+    background: #ffd2d2; 
   }
 
   @media (max-width: 480px){

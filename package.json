@@ -1,0 +1,19 @@
+{
+  "name": "jarabito",
+  "version": "1.0.0",
+  "description": "Calculadora de dosis pediatricas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexisss1928/pediatric_dossage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexisss1928/pediatric_dossage/issues"
+  },
+  "homepage": "https://github.com/alexisss1928/pediatric_dossage#readme"
+}

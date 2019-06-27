@@ -363,7 +363,7 @@ document.querySelector("#select_med").addEventListener("change", function(){
   document.querySelector("#ml_del_medicamento").value = med.mL;
   document.querySelector("#mg_del_medicamento").value = med.mG;
   document.querySelector("#notas p").textContent = med.nota;
-  (med.contra !== "") ? document.querySelector("#contra p").innerHTML = "<span>Contraindicaciones: </span>" + med.contra : document.querySelector("#contra p").innerHTML = ""
+  (med.contra !== "") ? document.querySelector("#contra p").innerHTML = "<span>Contras: </span>" + med.contra : document.querySelector("#contra p").innerHTML = ""
   document.querySelector("#presentaciones p").innerHTML = "<span>Nombre comercial: </span>" + med.comercial; 
   
 })

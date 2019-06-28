@@ -80,7 +80,7 @@ const dipirona = {
   dosisDia: 4,
   mL: 1,
   mG: 50,
-  nota: "Pacientes con trastornos hepáticos, ultima opción",
+  nota: "Usar como ultima opción, indicado en pacientes con trastornos hepáticos",
   contra:"Disminuye resistencia a infecciones",
   comercial: "Bral, Conmel, Novalcina"
 }

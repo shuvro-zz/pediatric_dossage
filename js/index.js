@@ -367,3 +367,17 @@ document.querySelector("#select_med").addEventListener("change", function(){
   document.querySelector("#presentaciones p").innerHTML = "<span>Nombre comercial: </span>" + med.comercial; 
   
 })
+
+
+//Open and close menu////////////////////////
+////////////////////////////////////////////
+document.getElementById("nav_sandwich").addEventListener("click", function(){
+
+  var i = Array.from(document.querySelectorAll("#nav-sandwich_inner div"))
+  
+    i[0].classList.toggle("nav_sandwich-up")
+    i[1].classList.toggle("nav_sandwich-mid")
+    i[2].classList.toggle("nav_sandwich-low")
+
+document.querySelector("#menuPhone").classList.toggle("unhideMenuPhone")
+  })

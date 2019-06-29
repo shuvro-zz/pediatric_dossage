@@ -34,8 +34,102 @@ h2 {
   font-size: 1.4em;
 }
 
+#menuPhone{
+  width: 100vw;
+  background: #7ad9f5;
+  position: absolute;
+  top:-150%;
+  transition: .5s;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  border-bottom: solid 3px #333;
+  font-size: 1.2em;
+}
+
+#menuPhone div, #menuPhone a{
+  text-align: center;
+  margin: 15px;
+  line-height: 25px;
+  color: #333;
+}
+
+.unhideMenuPhone{
+  top: 60px !important;
+}
+
+#wrapper > h2{
+  margin-top:0;
+  margin-bottom:30px;
+}
+
+nav{
+  background: #7ad9f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  
+  z-index: 999 ;
+}
+
+#nav_sandwich{
+  width:60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  -webkit-z-index: 999 ;
+  -moz-z-index: 999 ;
+  -ms-z-index: 999 ;
+  -o-z-index: 999 ;
+}
+
+#nav-sandwich_inner{
+  display: flex;
+  flex-direction: column;
+}
+
+.nav_sandwich-line{
+  width: 35px;
+  height: 3px;
+  background: #f6f6f6;
+  transition: .7s;
+}
+
+.nav_sandwich-line:nth-child(2){
+  margin-top: 8px;
+  margin-bottom: 8px
+}
+
+.nav_sandwich-up{
+  position: relative;
+  transform:translateY(11px) rotate(405deg);
+  transform-origin:middle;
+  background: #ca3e47 !important
+}
+
+.nav_sandwich-mid{
+  position: relative;
+  transform:rotate(-405deg);
+  background: #ca3e47 !important
+}
+
+
+.nav_sandwich-low{
+  position: relative;
+  transform:translateY(-11px) rotate(-405deg);
+  transform-origin:middle;
+  background: #ca3e47 !important
+}
+*/
 #titulo h1 {
-  margin-bottom: 5px
+  margin-bottom: 0
 }
 
 #titulo p {
@@ -76,7 +170,6 @@ hr {
   background: #d7f8f4;
   padding: 10px;
   border-radius: 5px;
-  margin-top: 15px
 }
 
 form {
@@ -349,6 +442,19 @@ option {
     -webkit-box-align: unset;
     -ms-flex-align: unset;
     align-items: unset;
+  }
+  nav{
+    text-align: center
+  }
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 0px
+  }
+
+  #menuPhone hr{
+    margin-top: 15px;
+    margin-bottom: 15px
   }
   
   #wrapper {

@@ -127,7 +127,7 @@ nav{
   transform-origin:middle;
   background: #ca3e47 !important
 }
-*/
+
 #titulo h1 {
   margin-bottom: 0
 }
@@ -292,7 +292,7 @@ input[type='number'] {
   background-color: #ffe1e1;
   color: #444;
   border-radius: 5px;
-  max-height: 70vh;
+  max-height: 60vh;
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-transition: .5s;

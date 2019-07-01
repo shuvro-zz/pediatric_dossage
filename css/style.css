@@ -38,17 +38,16 @@ h2 {
   width: 100vw;
   background: #7ad9f5;
   position: absolute;
-  top:-150%;
-  transition: .5s;
+  top: -100%;
+  transition: .3s;
   z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 20px;
+  padding: 60px 20px 20px 20px;
   box-sizing: border-box;
-  border-bottom: solid 3px #333;
-  font-size: 1.2em;
+  font-size: 1rem;
 }
 
 #menuPhone div, #menuPhone a{
@@ -59,7 +58,24 @@ h2 {
 }
 
 .unhideMenuPhone{
-  top: 60px !important;
+  top: 0px !important;
+}
+
+.hideAnim{
+  animation: bounce .5s cubic-bezier(0.6, -0.27, 0.735, 0.045)
+}
+
+@keyframes bounce{
+  0%{
+    top: 0px;
+  }
+  30%{
+    top: 0px;
+    height: 500px;
+  }
+  100%{
+    top: -100%;
+  }
 }
 
 #wrapper > h2{
@@ -96,20 +112,21 @@ nav{
 }
 
 .nav_sandwich-line{
-  width: 35px;
+  width: 30px;
   height: 3px;
+  border-radius: 50px;
   background: #f6f6f6;
-  transition: .7s;
+  transition: .6s;
 }
 
 .nav_sandwich-line:nth-child(2){
-  margin-top: 8px;
-  margin-bottom: 8px
+  margin-top: 6px;
+  margin-bottom: 6px
 }
 
 .nav_sandwich-up{
   position: relative;
-  transform:translateY(11px) rotate(405deg);
+  transform:translateY(9px) rotate(405deg);
   transform-origin:middle;
   background: #ca3e47 !important
 }
@@ -123,7 +140,7 @@ nav{
 
 .nav_sandwich-low{
   position: relative;
-  transform:translateY(-11px) rotate(-405deg);
+  transform:translateY(-9px) rotate(-405deg);
   transform-origin:middle;
   background: #ca3e47 !important
 }

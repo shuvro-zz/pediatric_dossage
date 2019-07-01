@@ -375,9 +375,15 @@ document.getElementById("nav_sandwich").addEventListener("click", function(){
 
   var i = Array.from(document.querySelectorAll("#nav-sandwich_inner div"))
   
-    i[0].classList.toggle("nav_sandwich-up")
-    i[1].classList.toggle("nav_sandwich-mid")
-    i[2].classList.toggle("nav_sandwich-low")
+  i[0].classList.toggle("nav_sandwich-up")
+  i[1].classList.toggle("nav_sandwich-mid")
+  i[2].classList.toggle("nav_sandwich-low")
 
-document.querySelector("#menuPhone").classList.toggle("unhideMenuPhone")
-  })
+  document.querySelector("#menuPhone").classList.toggle("unhideMenuPhone")
+
+  if (document.querySelector("#menuPhone").classList.contains("unhideMenuPhone")) {
+      document.querySelector("#menuPhone").classList.remove("hideAnim")
+    } else{
+      document.querySelector("#menuPhone").classList.add("hideAnim")
+  }
+})

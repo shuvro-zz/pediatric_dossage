@@ -470,8 +470,7 @@ option {
 
 @media (max-width: 480px) {
   body {
-    height: auto;
-    overflow: unset;
+    overflow: hidden;
     -webkit-box-pack: unset;
     -ms-flex-pack: unset;
     justify-content: unset;

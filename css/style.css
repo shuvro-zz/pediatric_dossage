@@ -89,7 +89,7 @@ h2 {
   top: -30px !important;
 }
 
-#wrapper>h2 {
+#wrapper > h2 {
   margin-top: 0;
   margin-bottom: 30px;
 }
@@ -276,7 +276,6 @@ input[type='number'] {
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
-  margin-bottom: 50px
 }
 
 #limpiar {
@@ -508,7 +507,7 @@ option {
     -ms-flex-align: center;
     align-items: center;
     margin: 0;
-    padding: 20px 20px 0 20px;
+    padding: 20px 20px 60px 20px;
     background-color: transparent;
   }
   #alert, #dosis_ayuda, #diaria_ayuda {

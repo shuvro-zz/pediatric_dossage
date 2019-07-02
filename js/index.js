@@ -326,7 +326,7 @@ document.getElementById("nav_sandwich").addEventListener("click", function () {
   i[0].classList.toggle("nav_sandwich-up")
   i[1].classList.toggle("nav_sandwich-mid")
   i[2].classList.toggle("nav_sandwich-low")
-  document.querySelector("#menuPhone").classList.toggle("unhideMenuPhone")
+  document.querySelector(".menuPhone").classList.toggle("unhideMenuPhone")
 })
 
 

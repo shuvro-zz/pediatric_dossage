@@ -19,7 +19,7 @@ body {
   height: 100vh;
   margin: 0;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   color: #444;
   overflow: hidden
 }
@@ -46,7 +46,7 @@ h1, h2 , #name{
 }
 
 h1 , #name{
-  font-size: 2.7em;
+  font-size: 1.8em;
   margin-top: 0;
   text-shadow: 1px 1px #444, 2px 2px #444, 3px 3px #444, 4px 4px #444, -1px -1px #444
 }
@@ -60,7 +60,7 @@ h1 , #name{
 }
 
 h2 {
-  font-size: 1.4em;
+  font-size: 1.2em;
   text-shadow: 1px 1px #444, 3px 3px #444, -1px -1px #444
 }
 

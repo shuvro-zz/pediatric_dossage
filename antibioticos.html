@@ -15,9 +15,9 @@
 </head>
 
 
-<body id ="body_anestesia">
-    <div class="block"></div>
-  <div class="menuPhone" id="menuAnestesia">
+<body>
+  <div class="block"></div>
+  <div class="menuPhone">
     <div id="item2"><i class="fas fa-tablets"></i><br> <a href="antibioticos.html">Calculadora de antibioticos y analgesicos</a></div>
     <div id="item2"><i class="fas fa-calculator"></i><br><a href="preventiva.html">Calculadora de antibioticos preventivos</a></div>
     <div id="item3"><i class="fas fa-syringe"></i><br><a href="anestesia.html">Calculadora de anestesia</a></div>
@@ -75,7 +75,7 @@
       <span>Metronidazol:</span> 4 diarias<br>
     </div>
   </div>
-  <nav id="navAnes">
+  <nav>
       <div id="nav_title">
           <div id="titulo">
             <a id="name" href="index.html">Jarabito</a>
@@ -92,18 +92,41 @@
   </nav>
   <div id="wrapper">
 
-    <h2>Calculadora de dosis anestesica</h2>
-    <!--hr-->
+    <h2>Calculadora de dosis</h2>
     <div id="custom-select">
-      <p id="instruccion">Selecciona el anestesico de la lista</p>
+      <p id="instruccion">Selecciona el medicamento de la lista, si no lo encuentras ingresa los datos de forma manual
+      </p>
       <div class="select">
-
         <select name="Seleccionar" id="select_med">
-          <option value="opciones" selected disabled>Selecciona el anestesico</option>
-          <option value="lidocaina">Lidocaina 2%</option>
-          <option value="mepivacaina">Mepivacaina 3%</option>
-          <option value="articaina">Articaina 4%</option>
-          
+          <option value="opciones" selected disabled>Selecciona el medicamento</option>
+          <optgroup label=Analgesicos>
+            <option value="acetaminofen">Acetaminofen 120mg / 5ml</option>
+            <option value="dipirona">Dipirona 50mg / ml</option>
+          </optgroup>
+          <optgroup label=AINE's>
+            <option value="diclofenac">Diclofenac 1.8mg / ml</option>
+            <option value="ibuprofeno">Ibuprofeno 100mg / 5ml</option>
+            <option value="ketoprofeno">Ketoprofeno 1mg / ml</option>
+          </optgroup>
+          <optgroup label=Antibioticos>
+            <option value="amoxicilina125">Amoxicilina 125mg / 5ml</option>
+            <option value="amoxicilina250">Amoxicilina 250mg / 5ml</option>
+            <option value="amoxicilina500">Amoxicilina 500mg / 5ml</option>
+            <option value="amoxicilina750">Amoxicilina 750mg / 5ml</option>
+            <option value="amoxicilinaCla250"> Amoxicilina + Ac. Clavulanico 250mg / 5ml</option>
+            <option value="amoxicilinaCla400"> Amoxicilina + Ac. Clavulanico 400mg / 5ml</option>
+            <option value="amoxicilinaCla600"> Amoxicilina + Ac. Clavulanico 600mg / 5ml</option>
+            <option value="eritromicina150">Eritromicina 150mg / 5ml</option>
+            <option value="eritromicina250">Eritromicina 250mg / 5ml</option>
+            <option value="claritromicina125">Claritromicina 125mg / 5ml</option>
+            <option value="claritromicina250">Claritromicina 250mg / 5ml</option>
+            <option value="azitromicina">Azitromicina 200mg/5ml</option>
+            <option value="sultamicilina">Sultamicilina 250mg / 5ml</option>
+            <option value="cefadroxilo250">Cefadroxilo 250mg/5ml</option>
+            <option value="cefadroxilo500">Cefadroxilo 500mg/5ml</option>
+            <option value="metronidazol125">Metronidazol 125mg / 5ml</option>
+            <option value="metronidazol250">Metronidazol 250mg / 5ml</option>
+          </optgroup>
         </select>
 
       </div>
@@ -122,25 +145,25 @@
 
 
 
-    <form id="dosis_form" class="prevent">
+    <form id="dosis_form">
       <label for="peso">Peso del niño (Kg)</label>
       <input type="tel" name="peso" id="peso" value="" placeholder="0" min="1" max="99" maxlength="2">
 
       <label for="dosis">Dosis por kilo (mg)
-        <button id="dosis_question" class="dosis_question hide">?</button>
+        <button id="dosis_question" class="dosis_question">?</button>
       </label>
       <input type="tel" name="Ml" id="dosis" value="" placeholder="0" min="1" max="99" maxlength="2">
 
-      <label for="dosisXDia" class="hide">Dosis al día
+      <label for="dosisXDia">Dosis al día
         <button class="dosis_question" id="dosisDiarias">?</button>
       </label>
-      <input type="tel" name="Dosis al dia" id="dosisXDia" class="hide" value="" placeholder="0" min="1" max="99" maxlength="1">
+      <input type="tel" name="Dosis al dia" id="dosisXDia" value="" placeholder="0" min="1" max="99" maxlength="1">
 
-      <label for="mg_del_medicamento" class="hide">Mg del Medicamento</label>
-      <input type="tel" name="Mg" id="mg_del_medicamento" class="hide" value="" placeholder="0" min="1" max="999" maxlength="3">
+      <label for="mg_del_medicamento">Mg del Medicamento</label>
+      <input type="tel" name="Mg" id="mg_del_medicamento" value="" placeholder="0" min="1" max="999" maxlength="3">
 
-      <label for="ml_del_medicamento" class="hide">Ml del Medicamento</label>
-      <input type="tel" name="Ml" id="ml_del_medicamento" class="hide" value="" placeholder="0" min="1" max="99" maxlength="2">
+      <label for="ml_del_medicamento">Ml del Medicamento</label>
+      <input type="tel" name="Ml" id="ml_del_medicamento" value="" placeholder="0" min="1" max="99" maxlength="2">
 
 
 
@@ -148,7 +171,7 @@
 
     <div id="btn">
       <input type="button" value="Limpiar" id="limpiar" class="button">
-      <input type="button" value="Calcular dosis" id="calcularAnestesia" class="button">
+      <input type="button" value="Calcular dosis" id="calcular" class="button">
     </div>
 
   </div>

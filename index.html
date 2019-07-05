@@ -16,170 +16,62 @@
 
 
 <body>
-  <div class="block"></div>
-  <div class="menuPhone">
-    <div id="item2"><i class="fas fa-tablets"></i><br> <a href="index.html">Calculadora de antibioticos y analgesicos</a></div>
-    <div id="item2"><i class="fas fa-calculator"></i><br><a href="preventiva.html">Calculadora de antibioticos preventivos</a></div>
-    <div id="item3"><i class="fas fa-syringe"></i><br><a href="anestesia.html">Calculadora de anestesia</a></div>
-    <div id="item4"><i class="fas fa-clipboard"></i><br><a href="notas.html">Notas</a></div>
-  </div>
-  <div id="alert">
-    <button id="alert_close">X</button>
-    <p id="alert_message"></p>
-  </div>
-  <div id="dosis_ayuda">
-    <button id="ayuda_close">X</button>
-    <div>
-      <h2>Analgesicos</h2>
-      <span>Acetaminofen:</span> 10 - 15mg / Kg<br>
-      <span>Dipirona:</span> 10 - 12mg / Kg <br>
-      <h2>AINE's</h2>
-      <span>Acido acetilsalicilico:</span> 60mg / Kg<br>
-      <span>Ibuprofeno:</span> 5 - 10mg / Kg<br>
-      <span>Diclofenac:</span> 0.5 - 2mg / Kg<br>
-      <span>Ketoprofeno:</span> 0.5mg / Kg <br>
-      <span>Nimesulide:</span> 50 - 100mg cada 12 horas <br>
-      <h2>Antibioticos</h2>
-      <span>Amoxicilina:</span> 80 - 90mg / Kg<br>
-      <span>Amoxicilina + Ac. Clavulanico:</span> 80 - 90mg / Kg<br>
-      <span>Eritromicina:</span> 50mg / Kg<br>
-      <span>Claritromicina:</span> 7.5mg / Kg <br>
-      <span>Azitromicina:</span> 10mg / Kg <br>
-      <span>Clindamicina:</span> 20 - 40mg / Kg <br>
-      <span>Sultamicilina:</span> 25 - 50mg / Kg <br>
-      <span>Cefadroxilo:</span> 25 - 50mg / Kg <br>
-      <span>Metronidazol:</span> 40 - 50mg / Kg <br>
-    </div>
-  </div>
-  <div id="diaria_ayuda">
-    <button id="diaria_close">X</button>
-    <div>
-      <h2>Analgesicos</h2>
-      <span>Acetaminofen:</span> 4 - 6 diarias<br>
-      <span>Dipirona:</span> 4 diarias<br>
-      <h2>AINE's</h2>
-      <span>Acido acetilsalicilico:</span> 4 - 6 diarias<br>
-      <span>Ibuprofeno:</span>2 - 3 diarias<br>
-      <span>Diclofenac:</span> 2 - 3 diarias<br>
-      <span>Ketoprofeno:</span> 3 - 4 diarias<br>
-      <span>Nimesulide:</span> 2 diarias<br>
-      <h2>Antibioticos</h2>
-      <span>Amoxicilina:</span> 3 diarias<br>
-      <span>Amoxicilina + Ac. Clavulanico:</span> 2 - 3 diarias<br>
-      <span>Eritromicina:</span> 4 diarias<br>
-      <span>Claritromicina:</span> 2 diarias<br>
-      <span>Azitromicina:</span> Una dosis diaria por 3 dias<br>
-      <span>Clindamicina:</span> 4 diarias<br>
-      <span>Sultamicilina:</span> 2 diarias<br>
-      <span>Cefadroxilo:</span> 2 diarias<br>
-      <span>Metronidazol:</span> 4 diarias<br>
-    </div>
-  </div>
-  <nav>
-      <div id="nav_title">
-          <div id="titulo">
-            <h1 id="name">Jarabito</h1>
-            <!--p>Calculadora de dosis pediátricas</p-->
-          </div>
-        </div>
-    <div id="nav_sandwich">
-      <div id="nav-sandwich_inner">
-        <div class = "nav_sandwich-line "></div>
-        <div class = "nav_sandwich-line "></div>
-        <div class = "nav_sandwich-line "></div>
-    </div>
-    </div>
-    
-  </nav>
   <div id="wrapper">
-
-    <h2>Calculadora de dosis</h2>
-    <div id="custom-select">
-      <p id="instruccion">Selecciona el medicamento de la lista, si no lo encuentras ingresa los datos de forma manual
-      </p>
-      <div class="select">
-        <select name="Seleccionar" id="select_med">
-          <option value="opciones" selected disabled>Selecciona el medicamento</option>
-          <optgroup label=Analgesicos>
-            <option value="acetaminofen">Acetaminofen 120mg / 5ml</option>
-            <option value="dipirona">Dipirona 50mg / ml</option>
-          </optgroup>
-          <optgroup label=AINE's>
-            <option value="diclofenac">Diclofenac 1.8mg / ml</option>
-            <option value="ibuprofeno">Ibuprofeno 100mg / 5ml</option>
-            <option value="ketoprofeno">Ketoprofeno 1mg / ml</option>
-          </optgroup>
-          <optgroup label=Antibioticos>
-            <option value="amoxicilina125">Amoxicilina 125mg / 5ml</option>
-            <option value="amoxicilina250">Amoxicilina 250mg / 5ml</option>
-            <option value="amoxicilina500">Amoxicilina 500mg / 5ml</option>
-            <option value="amoxicilina750">Amoxicilina 750mg / 5ml</option>
-            <option value="amoxicilinaCla250"> Amoxicilina + Ac. Clavulanico 250mg / 5ml</option>
-            <option value="amoxicilinaCla400"> Amoxicilina + Ac. Clavulanico 400mg / 5ml</option>
-            <option value="amoxicilinaCla600"> Amoxicilina + Ac. Clavulanico 600mg / 5ml</option>
-            <option value="eritromicina150">Eritromicina 150mg / 5ml</option>
-            <option value="eritromicina250">Eritromicina 250mg / 5ml</option>
-            <option value="claritromicina125">Claritromicina 125mg / 5ml</option>
-            <option value="claritromicina250">Claritromicina 250mg / 5ml</option>
-            <option value="azitromicina">Azitromicina 200mg/5ml</option>
-            <option value="sultamicilina">Sultamicilina 250mg / 5ml</option>
-            <option value="cefadroxilo250">Cefadroxilo 250mg/5ml</option>
-            <option value="cefadroxilo500">Cefadroxilo 500mg/5ml</option>
-            <option value="metronidazol125">Metronidazol 125mg / 5ml</option>
-            <option value="metronidazol250">Metronidazol 250mg / 5ml</option>
-          </optgroup>
-        </select>
-
-      </div>
-
-      <div id="notas">
-        <p></p>
-      </div>
-      <div id="contra">
-        <p></p>
-      </div>
-      <div id="presentaciones">
-        <p></p>
-      </div>
+    <h1 id="indexTitle">Jarabito</h1>
+    <p>Calculadora de dosis pediatricas</p>
+    <hr>
+    <h2 id="indexSubTitle">Calculadoras</h2>
+    <div id="box">
+      <a class="box__categoria" href="antibioticos.html">
+        <div id="item2">
+          <i class="fas fa-tablets"></i><br>
+          <p>Antibioticos y analgesicos</p>
+        </div>
+        <div class="circle"></div>
+      </a>
+      <a class="box__categoria" href="preventiva.html">
+        <div id="item2">
+          <i class="fas fa-calculator"></i><br>
+          <p>Antibioticos preventivos</p>
+        </div>
+        <div class="circle"></div>
+      </a>
+      <a class="box__categoria" href="anestesia.html">
+        <div id="item3">
+          <i class="fas fa-syringe"></i><br>
+          <p>Anestesicos</p>
+        </div>
+        <div class="circle"></div>
+      </a>
 
     </div>
-
-
-
-    <form id="dosis_form">
-      <label for="peso">Peso del niño (Kg)</label>
-      <input type="tel" name="peso" id="peso" value="" placeholder="0" min="1" max="99" maxlength="2">
-
-      <label for="dosis">Dosis por kilo (mg)
-        <button id="dosis_question" class="dosis_question">?</button>
-      </label>
-      <input type="tel" name="Ml" id="dosis" value="" placeholder="0" min="1" max="99" maxlength="2">
-
-      <label for="dosisXDia">Dosis al día
-        <button class="dosis_question" id="dosisDiarias">?</button>
-      </label>
-      <input type="tel" name="Dosis al dia" id="dosisXDia" value="" placeholder="0" min="1" max="99" maxlength="1">
-
-      <label for="mg_del_medicamento">Mg del Medicamento</label>
-      <input type="tel" name="Mg" id="mg_del_medicamento" value="" placeholder="0" min="1" max="999" maxlength="3">
-
-      <label for="ml_del_medicamento">Ml del Medicamento</label>
-      <input type="tel" name="Ml" id="ml_del_medicamento" value="" placeholder="0" min="1" max="99" maxlength="2">
-
-
-
-    </form>
-
-    <div id="btn">
-      <input type="button" value="Limpiar" id="limpiar" class="button">
-      <input type="button" value="Calcular dosis" id="calcular" class="button">
+    <h2 id="indexSubTitle">Otros</h2>
+    <div id="box">
+    <a class="box__categoria" href="notas.html">
+        <div id="item4">
+          <i class="fas fa-clipboard"></i><br>
+          <p>Notas</p>
+        </div>
+        <div class="circle"></div>
+      </a>
     </div>
-
   </div>
   <div id="footer">
     <p><i class="fas fa-coffee"></i> Creado por <a href="https://alexisss1928.github.io/">&lt;Alexis Salcedo&gt;</a></p>
   </div>
-  <script async src="js/index.js"></script>
+  <script>
+    var boxes = Array.from(document.querySelectorAll(".box__categoria"))
+
+    boxes.forEach( x => x.addEventListener("click", function(){
+      event.preventDefault();
+      this.classList.add("shake")
+      var www = this.href;
+      var f = function(){ window.location.href=www };
+      setTimeout(f,0500);
+      return false;
+    }))
+    
+  </script>
   <!--script>
     if('serviceWorker' in navigator){
       window.addEventListener('load', () =>{

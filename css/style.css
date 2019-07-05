@@ -24,6 +24,10 @@ body {
   overflow: hidden
 }
 
+#body_menu{
+  background: #fff;
+}
+
 #body_anestesia {
   background-color: #23a393;
 }
@@ -36,21 +40,35 @@ body {
   background-color: #c56868;
 }
 
-h1, h2 {
+h1, h2 , #name{
   color: #ffa5a5;
   font-family: 'Chango', cursive, sans-serif;
-  
 }
 
-h1 {
+h1 , #name{
   font-size: 2.7em;
   margin-top: 0;
   text-shadow: 1px 1px #444, 2px 2px #444, 3px 3px #444, 4px 4px #444, -1px -1px #444
 }
 
+#wrapper #indexTitle{
+  font-size: 3em;
+}
+
+#wrapper #indexSubTitle{
+  margin-bottom: 0
+}
+
 h2 {
   font-size: 1.4em;
   text-shadow: 1px 1px #444, 3px 3px #444, -1px -1px #444
+}
+
+hr{
+  border: none;
+  margin-bottom: 20px;
+  width: 80%;
+  border-bottom: dashed 3px #ffa5a5
 }
 
 .menuPhone {
@@ -143,8 +161,8 @@ nav {
           align-items: center;
   padding-left: 20px;
   z-index: 500;
-  -webkit-box-shadow: 0 5px 5px #333;
-          box-shadow: 0 5px 5px #333
+  -webkit-box-shadow: 0 2px 15px #333;
+          box-shadow: 0 2px 15px #333
 }
 
 #navPrev{
@@ -244,11 +262,6 @@ nav {
   color: #444;
 }
 
-hr {
-  width: 90%;
-  border: dashed 1px #ffa5a5;
-}
-
 #wrapper {
   background: #f6f6f6;
   text-align: center;
@@ -268,6 +281,140 @@ hr {
   -ms-flex-align: center;
   align-items: center;
   overflow-x: hidden;
+}
+
+#box{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.box__categoria{
+  display: block;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: none;
+  background-color: #7ad9f5;
+  overflow: hidden;
+}
+
+.shake{
+  animation: shake .5s cubic-bezier(0.6, -0.30, 0.735, 0.045);
+}
+
+@keyframes shake{
+  0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+	50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+	70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.circle{
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  background: #3bb6db;
+  position: absolute;
+  top: -70px;
+  right: -60px;
+  
+}
+
+.box__categoria:nth-child(2){
+  background-color: #d2b9ec ;
+}
+
+.box__categoria:nth-child(2) .circle{
+  width: 100px;
+  height: 100px;
+  background: #b5a3c9;
+  top: unset;
+  bottom: -50px;
+  left: -40px;
+}
+
+.box__categoria:nth-child(3){
+  background-color: #4fc5b7 ;
+}
+
+.box__categoria:nth-child(3) .circle{
+  width: 30px;
+  height: 30px;
+  background: #8fe7dd;
+  top: unset;
+  bottom: 50px;
+  left: 40px;
+}
+
+.box__categoria:nth-child(3) .circle:after{
+  content: "";
+  width: 120px;
+  height: 120px;
+  border-radius: 150px;
+  background: #2ea093;
+  position: absolute;
+  top: -30px;
+  right: -160px;
+}
+
+.box__categoria:nth-child(4){
+  background-color: #c59393;
+}
+
+.box__categoria:nth-child(4) .circle{
+  width: 60px;
+  height: 60px;
+  background: #ac6262;
+  top: unset;
+  bottom: 100px;
+  left: 10px;
+}
+
+.box__categoria:nth-child(4) .circle:after{
+  content: "";
+  width: 60px;
+  height:60px;
+  border-radius: 150px;
+  background: #a38686;
+  position: absolute;
+  top: 120px;
+  left: 100px;
+}
+
+#box div {
+  text-align: left;
+}
+#box p{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+  z-index:1;
+}
+
+#box i {
+  position: absolute;
+  font-size: 26px;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  z-index:1;
 }
 
 #presentaciones p, #notas p, #contra p {
@@ -381,7 +528,8 @@ input[type='number'] {
   font-size: 12px;
   text-align: center;
   position: fixed;
-  bottom: 0
+  bottom: 0;
+  z-index: 999
 }
 
 .dosis_question {

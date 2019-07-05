@@ -335,34 +335,42 @@ document.getElementById("nav_sandwich").addEventListener("click", function () {
 //Remover clase para alerta con el resultado
 document.querySelector("#alert_close").addEventListener("click", function () {
   document.querySelector("#alert").classList.remove("unhide");
+  document.querySelector(".block").style.display = "none"
+
 })
 
 
 //Abrir ayuda de dosis
 document.querySelector("#dosis_question").addEventListener("click", function () {
-  event.preventDefault();
+  event.preventDefault()
   document.querySelector("#dosis_ayuda").classList.add("unhide");
+  document.querySelector(".block").style.display = "block"
 })
 
 
 //Cerrar ayuda de dosis
 document.querySelector("#ayuda_close").addEventListener("click", function () {
+  event.preventDefault()
   document.querySelector("#dosis_ayuda").classList.remove("unhide");
+  document.querySelector(".block").style.display = "none"
 })
 
 
 //Abrir ayuda de dosis diarias
 if (document.querySelector("#dosisDiarias")) {
   document.querySelector("#dosisDiarias").addEventListener("click", function () {
-    event.preventDefault();
+    event.preventDefault()
     document.querySelector("#diaria_ayuda").classList.add("unhide");
+    document.querySelector(".block").style.display = "block"
   })
 }
 
 
 //Cerrar ayuda de dosis diarias
 document.querySelector("#diaria_close").addEventListener("click", function () {
+  event.preventDefault()
   document.querySelector("#diaria_ayuda").classList.remove("unhide");
+  document.querySelector(".block").style.display = "none"
 })
 
 
@@ -409,10 +417,12 @@ if (!document.getElementById("body_anestesia")){
     if (peso === "" || dosis === "" || dosisDia === "" || mL === "" || mG === "") {
       document.querySelector("#alert").classList.add("unhide");
       document.querySelector("#alert_message").textContent = "Parece que te falta algún dato, por favor verificalos";
+      document.querySelector(".block").style.display = "block"
     } else {
   
       //Agregar clase para alerta con el resultado
       document.querySelector("#alert").classList.add("unhide");
+      document.querySelector(".block").style.display = "block"
   
       //Mensaje de alerta con el resultado
       if (document.querySelector("form").classList.contains("prevent")) {
@@ -440,10 +450,12 @@ if (!document.getElementById("body_anestesia")){
     if (peso === "" || dosis === "" || dosisDia === "") {
       document.querySelector("#alert").classList.add("unhide");
       document.querySelector("#alert_message").textContent = "Parece que te falta algún dato, por favor verificalos";
+      document.querySelector(".block").style.display = "block"
     } else {
   
       //Agregar clase para alerta con el resultado
       document.querySelector("#alert").classList.add("unhide");
+      document.querySelector(".block").style.display = "block"
   
       //Mensaje de alerta con el resultado
         document.querySelector("#alert_message").textContent = "Se deben administrar " + dosisFinal.toFixed(1) + " cartuchos de anestesia";

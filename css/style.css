@@ -18,6 +18,7 @@ body {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 14px;
   color: #444;
+  overflow: hidden
 }
 
 #body_anestesia {
@@ -238,7 +239,8 @@ hr {
 
 #note{
   font-size: 12px;
-  margin-top: 0
+  margin-top: 0;
+  line-height: 18px
 }
 
 form {
@@ -365,6 +367,17 @@ input[type='number'] {
   -o-transition: .5s;
   transition: .5s;
   z-index: 999
+}
+
+.block{
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: #333;
+  filter: opacity(80%);
+  transition: 5s;
+  z-index: 997
 }
 
 #alert::-webkit-scrollbar, #dosis_ayuda::-webkit-scrollbar, #diaria_ayuda::-webkit-scrollbar {

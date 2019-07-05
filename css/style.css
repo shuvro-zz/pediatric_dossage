@@ -42,13 +42,13 @@ body {
 
 h1, h2 , #name{
   color: #ffa5a5;
-  font-family: 'Chango', cursive, sans-serif;
 }
 
 h1 , #name{
   font-size: 1.8em;
   margin-top: 0;
-  text-shadow: 1px 1px #444, 2px 2px #444, 3px 3px #444, 4px 4px #444, -1px -1px #444
+  text-shadow: 1px 1px #444, 2px 2px #444, 3px 3px #444, 4px 4px #444, -1px -1px #444;
+  font-family: 'Chango', cursive, sans-serif;
 }
 
 #wrapper #indexTitle{
@@ -60,8 +60,9 @@ h1 , #name{
 }
 
 h2 {
-  font-size: 1.3em;
-  text-shadow: 1px 1px #444, 3px 3px #444, -1px -1px #444
+  color: #fff;
+  font-size: 1.6em;
+  text-shadow: 1px 1px #777, 2px 2px #777, -1px -1px #777
 }
 
 hr{

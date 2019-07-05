@@ -5,7 +5,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -58,13 +61,26 @@ h2 {
   position: absolute;
   top: -100%;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: .4s cubic-bezier(0.6, -0.30, 0.735, 0.045);
+  -o-transition: .4s cubic-bezier(0.6, -0.30, 0.735, 0.045);
   transition: .4s cubic-bezier(0.6, -0.30, 0.735, 0.045);
   z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 100px 0px 20px 0px;
   border-radius: 0 0 30px 30px;
   font-size: 12px;
@@ -117,14 +133,22 @@ h2 {
 
 nav {
   width: 100%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: #7ad9f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 20px;
   z-index: 500;
-  box-shadow: 0 5px 5px #333
+  -webkit-box-shadow: 0 5px 5px #333;
+          box-shadow: 0 5px 5px #333
 }
 
 #navPrev{
@@ -143,9 +167,15 @@ nav {
   width: 60px;
   height: 60px;
   margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow: hidden;
   -webkit-z-index: 600;
   -moz-z-index: 600;
@@ -155,8 +185,13 @@ nav {
 }
 
 #nav-sandwich_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .nav_sandwich-line {
@@ -164,6 +199,8 @@ nav {
   height: 3px;
   border-radius: 50px;
   background: #f6f6f6;
+  -webkit-transition: .6s;
+  -o-transition: .6s;
   transition: .6s;
 }
 
@@ -174,21 +211,31 @@ nav {
 
 .nav_sandwich-up {
   position: relative;
-  transform: translateY(9px) rotate(405deg);
-  transform-origin: middle;
+  -webkit-transform: translateY(9px) rotate(405deg);
+      -ms-transform: translateY(9px) rotate(405deg);
+          transform: translateY(9px) rotate(405deg);
+  -webkit-transform-origin: middle;
+      -ms-transform-origin: middle;
+          transform-origin: middle;
   background: #ca3e47 !important
 }
 
 .nav_sandwich-mid {
   position: relative;
-  transform: rotate(-405deg);
+  -webkit-transform: rotate(-405deg);
+      -ms-transform: rotate(-405deg);
+          transform: rotate(-405deg);
   background: #ca3e47 !important
 }
 
 .nav_sandwich-low {
   position: relative;
-  transform: translateY(-9px) rotate(-405deg);
-  transform-origin: middle;
+  -webkit-transform: translateY(-9px) rotate(-405deg);
+      -ms-transform: translateY(-9px) rotate(-405deg);
+          transform: translateY(-9px) rotate(-405deg);
+  -webkit-transform-origin: middle;
+      -ms-transform-origin: middle;
+          transform-origin: middle;
   background: #ca3e47 !important
 }
 
@@ -232,7 +279,8 @@ hr {
 }
 
 #custom-select, #note {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   background: #d7f8f4;
   padding: 10px;
@@ -377,7 +425,10 @@ input[type='number'] {
   width: 100vw;
   height: 100vh;
   background: #333;
-  filter: opacity(80%);
+  -webkit-filter: opacity(80%);
+          filter: opacity(80%);
+  -webkit-transition: 5s;
+  -o-transition: 5s;
   transition: 5s;
   z-index: 997
 }
@@ -404,7 +455,9 @@ input[type='number'] {
 .unhide {
   top: 50% !important;
   left: 50% !important;
-  transform: translate(-50%, -50%) rotate(360deg) !important;
+  -webkit-transform: translate(-50%, -50%) rotate(360deg) !important;
+      -ms-transform: translate(-50%, -50%) rotate(360deg) !important;
+          transform: translate(-50%, -50%) rotate(360deg) !important;
 }
 
 .hide {

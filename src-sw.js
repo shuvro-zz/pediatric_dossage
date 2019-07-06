@@ -8,6 +8,10 @@ workbox.routing.registerRoute(
   })
 );
 
+
+//Google analytics work offline
+workbox.googleAnalytics.initialize();
+
 // Cache the underlying font files with a cache-first strategy for 1 year.
 workbox.routing.registerRoute(
   /^https:\/\/fonts\.gstatic\.com/,

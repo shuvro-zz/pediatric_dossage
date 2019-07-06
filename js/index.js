@@ -416,7 +416,7 @@ if (!document.getElementById("body_anestesia")){
     //Verificar si falta algun dato o resolver la dosis
     if (peso === "" || dosis === "" || dosisDia === "" || mL === "" || mG === "") {
       document.querySelector("#alert").classList.add("unhide");
-      document.querySelector("#alert_message").textContent = "Parece que te falta algún dato, por favor verificalos";
+      document.querySelector("#alert_message").textContent = "Opss!! parece que te falta algún dato, por favor verificalos";
       document.querySelector(".block").style.display = "block"
     } else {
   
@@ -449,7 +449,7 @@ if (!document.getElementById("body_anestesia")){
     //Verificar si falta algun dato o resolver la dosis
     if (peso === "" || dosis === "" || dosisDia === "") {
       document.querySelector("#alert").classList.add("unhide");
-      document.querySelector("#alert_message").textContent = "Parece que te falta algún dato, por favor verificalos";
+      document.querySelector("#alert_message").textContent = "Opss!! parece que te falta algún dato, por favor verificalos";
       document.querySelector(".block").style.display = "block"
     } else {
   
@@ -458,7 +458,7 @@ if (!document.getElementById("body_anestesia")){
       document.querySelector(".block").style.display = "block"
   
       //Mensaje de alerta con el resultado
-        document.querySelector("#alert_message").textContent = "Se deben administrar " + dosisFinal.toFixed(1) + " cartuchos de anestesia";
+        document.querySelector("#alert_message").textContent = "Se recomienda administrar " + dosisFinal.toFixed(1) + " cartuchos de anestesia";
   
       //Resetear valores de los input luego de calcular
       document.getElementById("dosis_form").reset();

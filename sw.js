@@ -81,7 +81,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "index.html",
-    "revision": "6b1fe3a84de4c3dc254b2c9c612a2a7e"
+    "revision": "8489e3805fb7b8392d1fe7b366c26f43"
   },
   {
     "url": "js/index.js",

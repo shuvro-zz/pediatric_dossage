@@ -29,6 +29,23 @@ workbox.routing.registerRoute(
   })
 );
 
+// Cache the underlying font files with a cache-first strategy for 1 year.
+workbox.routing.registerRoute(
+  /^https:\/\/fontawesome\.com/,
+  new workbox.strategies.CacheFirst({
+    cacheName: 'fontawesome-fonts',
+    plugins: [
+      new workbox.cacheableResponse.Plugin({
+        statuses: [0, 200],
+      }),
+      new workbox.expiration.Plugin({
+        maxAgeSeconds: 60 * 60 * 24 * 365,
+        maxEntries: 30,
+      }),
+    ],
+  })
+);
+
 
 if ('serviceWorker' in navigator) {
   const wb = new Workbox('/sw.js');
@@ -89,7 +106,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "js/index.js",
-    "revision": "2fdf177169b6a847c0dbc8bb7a9ebe15"
+    "revision": "af7c0c95ab00443bdd7fcbe87604d81b"
   },
   {
     "url": "notas.html",
@@ -101,7 +118,7 @@ workbox.precaching.precacheAndRoute([
   },
   {
     "url": "src-sw.js",
-    "revision": "8fb84da49a877aa46212af45f8a5383b"
+    "revision": "d82b85407bda57732099341246370c1e"
   },
   {
     "url": "workbox-config.js",

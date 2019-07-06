@@ -284,7 +284,7 @@ nav {
   overflow-x: hidden;
 }
 
-#box{
+.box{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -373,45 +373,46 @@ nav {
   right: -160px;
 }
 
-.box__categoria:nth-child(4){
+.box__categoria__otros{
   background-color: #c59393;
 }
 
-.box__categoria:nth-child(4) .circle{
+.box__categoria__otros .circle{
   width: 60px;
   height: 60px;
   background: #ac6262;
   top: unset;
-  bottom: 100px;
+  bottom: 80px;
   left: 10px;
 }
 
-.box__categoria:nth-child(4) .circle:after{
+.box__categoria__otros .circle:after{
   content: "";
   width: 60px;
   height:60px;
   border-radius: 150px;
   background: #a38686;
   position: absolute;
-  top: 120px;
-  left: 100px;
+  top: 80px;
+  left: 80px;
 }
 
-#box div {
+.box div {
   text-align: left;
 }
-#box p{
+.box p{
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
   left: 10px;
   display: block;
   font-size: 14px;
   color: #fff;
   font-family: 'Josefin Sans', sans-serif;
+  margin-bottom: 10px;
   z-index:1;
 }
 
-#box i {
+.box i {
   position: absolute;
   font-size: 26px;
   top: 20px;

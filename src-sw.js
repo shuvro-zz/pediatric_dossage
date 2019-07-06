@@ -31,7 +31,7 @@ workbox.routing.registerRoute(
 
 // Cache the underlying font files with a cache-first strategy for 1 year.
 workbox.routing.registerRoute(
-  /^https:\/\/fontawesome\.com/,
+  /^https:\/\/kit\.fontawesome\.com\/90985602b7\.js/,
   new workbox.strategies.CacheFirst({
     cacheName: 'fontawesome-fonts',
     plugins: [
